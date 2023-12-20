@@ -1,0 +1,14 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_rc_corner -name BEST -cap_table {../../gpdk045_libfiles_1/cap_table.capTbl} -T {-40} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0} -qx_tech_file {../../gpdk045_libfiles_1/qrcTechFile}
+create_rc_corner -name WORST -cap_table {../../gpdk045_libfiles_1/cap_table.capTbl} -T {125} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0} -qx_tech_file {../../gpdk045_libfiles_1/qrcTechFile}
+create_op_cond -name BEST -library_file {../../gpdk045_libfiles_1/fast.lib} -P {1} -V {1.1} -T {-40}
+create_op_cond -name WORST -library_file {../../gpdk045_libfiles_1/slow.lib} -P {1} -V {0.9} -T {125}
+create_library_set -name BEST -timing {../../gpdk045_libfiles_1/fast.lib}
+create_library_set -name WORST -timing {../../gpdk045_libfiles_1/slow.lib}
+create_constraint_mode -name constrain -sdc_files {../1Ghz/outputs_Sep04-12:01:26/Cordic_m.sdc}
+create_delay_corner -name BEST -library_set {BEST} -rc_corner {BEST}
+create_delay_corner -name WORST -library_set {WORST} -rc_corner {WORST}
+create_analysis_view -name BEST -constraint_mode {constrain} -delay_corner {BEST}
+create_analysis_view -name WORST -constraint_mode {constrain} -delay_corner {WORST}
+set_analysis_view -setup {BEST} -hold {WORST}

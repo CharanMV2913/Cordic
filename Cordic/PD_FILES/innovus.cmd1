@@ -1,0 +1,326 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Sep 12 11:55:17 2023                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.14-s095_1 (64bit) 04/19/2021 14:41 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.14-s095_1 NR210411-1939/20_14-UB (database version 18.20.547) {superthreading v2.13}
+#@(#)CDS: AAE 20.14-s018 (64bit) 04/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.14-s027_1 () Apr 13 2021 21:29:07 ( )
+#@(#)CDS: SYNTECH 20.14-s017_1 () Mar 25 2021 13:07:27 ( )
+#@(#)CDS: CPE v20.14-s080
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+setGenerateViaMode -auto true
+set init_gnd_net VSS
+set init_lef_file {../../gpdk045_libfiles_1/gsclib045_tech.lef ../../gpdk045_libfiles_1/gsclib045_macro.lef}
+set init_design_settop 0
+set init_verilog ../1Ghz/outputs_Sep04-12:01:26/Cordic_m.v
+set init_mmmc_file Default.view
+set init_pwr_net VDD
+init_design
+getIoFlowFlag
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site CoreSite -r 0.991728465488 0.8 5 5 5 5
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site CoreSite -r 0.989543147208 0.799925 5.0 5.13 5.0 5.13
+uiSetTool select
+getIoFlowFlag
+fit
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+applyGlobalNets
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer M11 -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer M7 -direction horizontal -width 1.8 -spacing 0.45 -set_to_set_distance 100 -start_from bottom -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit M11 -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit M11 -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer M11 -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer M7 -direction horizontal -width 1.8 -spacing 0.45 -set_to_set_distance 100 -start_from bottom -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit M11 -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit M11 -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+gui_select -rect {-79.34050 161.98200 245.72500 -5.89750}
+deleteSelectedFromFPlan
+deselectAll
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer M11 -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer M7 -direction horizontal -width 1.8 -spacing 0.45 -number_of_sets 4 -start_from bottom -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit M11 -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit M11 -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer M11 -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer M8 -direction vertical -width 1.8 -spacing 0.45 -number_of_sets 4 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit M11 -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit M11 -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer M11 -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer M8 -direction vertical -width 1.8 -spacing 0.45 -number_of_sets 4 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit M11 -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit M11 -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+panPage 1 0
+panPage -1 0
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { M1(1) M8(8) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1(1) M8(8) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1(1) M8(8) }
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { M1(1) M8(8) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1(1) M8(8) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1(1) M8(8) }
+clearDrc
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+setNanoRouteMode -quiet -droutePostRouteWidenWireRule VLMDefaultSetup
+setNanoRouteMode -quiet -timingEngine {}
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DLY4X4 DLY3X1 DLY2X1 BUFX6 DLY4X1 DLY1X1 CLKBUFX3 BUFX8 DLY3X4 DLY2X4 DLY1X4 CLKBUFX8 CLKBUFX6 CLKBUFX4 CLKBUFX20 CLKBUFX2 CLKBUFX16 CLKBUFX12 BUFX4 BUFX3 BUFX20 BUFX2 BUFX16 BUFX12 INVXL INVX8 INVX16 INVX6 INVX4 INVX20 CLKINVX8 INVX3 INVX2 INVX12 INVX1 CLKINVX6 CLKINVX4 CLKINVX3 CLKINVX20 CLKINVX2 CLKINVX16 CLKINVX12 CLKINVX1} -maxAllowedDelay 1
+setPlaceMode -reset
+setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 1 -moduleAwareSpare 0 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DLY4X4 DLY3X1 DLY2X1 BUFX6 DLY4X1 DLY1X1 CLKBUFX3 BUFX8 DLY3X4 DLY2X4 DLY1X4 CLKBUFX8 CLKBUFX6 CLKBUFX4 CLKBUFX20 CLKBUFX2 CLKBUFX16 CLKBUFX12 BUFX4 BUFX3 BUFX20 BUFX2 BUFX16 BUFX12 INVXL INVX8 INVX16 INVX6 INVX4 INVX20 CLKINVX8 INVX3 INVX2 INVX12 INVX1 CLKINVX6 CLKINVX4 CLKINVX3 CLKINVX20 CLKINVX2 CLKINVX16 CLKINVX12 CLKINVX1} -maxAllowedDelay 1
+setPlaceMode -fp false
+place_design
+extractRC
+add_ndr -width {M3 0.14 M4 0.14 M5 0.14 M6 0.14} -spacing {M3 0.14 M4 0.14 M5 0.14 M6 0.14} -name 2w2s
+create_route_type -name clkroute -non_default_rule 2w2s -bottom_preferred_layer M3 -top_preferred_layer M6
+set_ccopt_property -route_type clkroute -net_type trunk
+set_ccopt_property -route_type clkroute -net_type leaf
+set_ccopt_property -buffer_cells {CLKBUFX6 CLKBUFX12 CLKBUFX16 CLKBUFX8}
+set_ccopt_property -inverter_cells {CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 CLKINVX12 CLKINVX16}
+create_ccopt_clock_tree_spec -file ccopt.spec
+get_ccopt_clock_trees
+ccopt_check_and_flatten_ilms_no_restore
+set_ccopt_property cts_is_sdc_clock_root -pin clk true
+create_ccopt_clock_tree -name clk -source clk -no_skew_group
+set_ccopt_property clock_period -pin clk 1
+create_ccopt_skew_group -name clk/constrain -sources clk -auto_sinks
+set_ccopt_property include_source_latency -skew_group clk/constrain true
+set_ccopt_property extracted_from_clock_name -skew_group clk/constrain clk
+set_ccopt_property extracted_from_constraint_mode_name -skew_group clk/constrain constrain
+set_ccopt_property extracted_from_delay_corners -skew_group clk/constrain {BEST WORST}
+check_ccopt_clock_tree_convergence
+get_ccopt_property auto_design_state_for_ilms
+ccopt_design -cts
+help *route*
+detailRoute
+ecoRoute
+verify_drc
+zoomBox -10.06000 19.67100 283.91500 157.13650
+zoomBox 45.09450 32.85200 257.49150 132.17100
+zoomBox 134.53550 54.22700 214.64200 91.68550
+zoomBox 164.66400 61.42700 200.20850 78.04800
+zoomBox 178.17850 64.82350 193.95150 72.19900
+zoomBox 184.18650 66.62050 191.18600 69.89350
+zoomBox 186.71650 68.01300 189.82300 69.46550
+zoomBox 187.69950 68.56250 189.32100 69.32050
+zoomBox 188.13250 68.78900 189.12900 69.25500
+selectMarker 188.6350 69.0250 188.6450 69.1050 1 1 6
+deselectAll
+selectMarker 188.6350 69.0250 188.6450 69.1050 1 1 6
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox 188.135 68.525 189.145 69.605
+zoomBox 188.135 68.525 189.145 69.605
+getNanoRouteMode -routeStrictlyHonorNonDefaultRule -quiet
+getRouteMode -earlyGlobalMinRouteLayer -quiet
+getRouteMode -earlyGlobalMaxRouteLayer -quiet
+deselectAll
+selectVia 188.6350 69.0000 188.7650 69.1300 2 CTS_2
+zoomBox 187.94850 68.73350 189.36750 69.39700
+zoomBox 188.15350 68.82600 189.17900 69.30550
+deleteSelectedFromFPlan
+selectWire 188.6700 69.0350 188.9000 69.0950 1 CTS_2
+deleteSelectedFromFPlan
+selectMarker 188.6350 69.0250 188.6450 69.1050 1 1 6
+deleteSelectedFromFPlan
+violationBrowser -all -no_display_false -displayByLayer
+selectMarker 188.6350 69.0250 188.6450 69.1050 1 1 6
+deselectAll
+selectWire 188.6600 67.8850 188.7400 69.1050 2 CTS_2
+deselectAll
+selectWire 188.6600 67.8850 188.7400 69.1050 2 CTS_2
+deselectAll
+selectInst g104839
+deselectAll
+selectMarker 188.6350 69.0250 188.6450 69.1050 1 1 6
+violationBrowserClose
+verify_drc
+zoomBox 187.27100 68.62900 189.58500 69.71100
+zoomBox 186.28000 68.41200 190.04800 70.17400
+zoomBox 185.82750 68.31300 190.26050 70.38600
+zoomBox 185.29450 68.19650 190.51050 70.63550
+zoomBox 183.06400 67.70850 191.55750 71.68000
+zoomBox 180.84400 67.22250 192.60000 72.71950
+zoomBox 167.62950 64.33000 198.80200 78.90650
+zoomBox 132.59050 56.66250 215.24700 95.31350
+clearDrc
+zoomBox 56.90950 43.11750 276.07300 145.60050
+zoomBox -93.88000 15.08750 400.06000 246.05850
+zoomBox -264.19650 -16.57300 540.10300 359.52550
+panPage 0 -1
+zoomBox -71.25650 -51.54000 348.59350 144.78600
+zoomBox -39.65050 -38.78500 317.22200 128.09200
+zoomBox 10.05000 -18.72800 267.89000 101.84050
+zoomBox 59.98150 1.42250 218.32850 75.46700
+zoomBox 29.45850 -10.89500 248.62400 91.58900
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 1 0
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage -1 0
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 -1
+panPage 0 -1
+zoomBox -147.75000 72.21400 209.12450 239.09200
+panPage 1 0
+zoomBox -91.66050 68.04050 328.19150 264.36750
+panPage 0 -1
+panPage 0 -1
+verify_drc
+ecoRoute
+verify_drc
+zoomBox -130.05850 -54.61050 363.88550 176.36250
+panPage 0 1
+zoomBox 27.10850 29.00500 284.95000 149.57400
+panPage 0 -1
+zoomBox 124.58950 13.66050 238.99600 67.15800
+zoomBox 167.99700 24.22800 218.76050 47.96550
+zoomBox 187.23650 29.14800 209.76100 39.68050
+zoomBox 195.77250 31.33050 205.76750 36.00450
+zoomBox 198.91800 32.44400 203.35450 34.51850
+zoomBox 200.48150 32.99700 202.15500 33.77950
+selectVia 201.4750 33.2800 201.5550 33.4100 2 n_2091
+deselectAll
+selectMarker 201.4750 33.2800 201.5400 33.5300 2 1 6
+deselectAll
+selectMarker 201.4750 33.2800 201.5400 33.5300 2 1 6
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+deselectAll
+selectMarker 201.4750 33.2800 201.5400 33.5300 2 1 6
+deleteSelectedFromFPlan
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox 200.97900 33.20150 201.85300 33.61000
+zoomBox 201.06050 33.23450 201.80350 33.58200
+selectMarker 201.4750 33.2800 201.5400 33.5300 2 1 6
+deselectAll
+selectWire 201.4750 33.2800 201.5550 33.5300 2 n_2091
+deleteSelectedFromFPlan
+selectObject Pin g98636/C1
+deselectAll
+selectMarker 201.4750 33.2800 201.5400 33.5300 2 1 6
+deleteSelectedFromFPlan
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox 200.88650 33.17600 201.91550 33.65700
+selectObject Pin g98636/C1
+deselectAll
+selectVia 201.4750 33.2800 201.5550 33.4100 2 n_2091
+deleteSelectedFromFPlan
+selectVia 201.4500 33.2800 201.5800 33.4100 3 n_2091
+deleteSelectedFromFPlan
+selectWire 201.4600 30.0750 201.5400 35.0950 2 CTS_1
+deleteSelectedFromFPlan
+undo
+violationBrowser -all -no_display_false -displayByLayer
+deselectAll
+selectWire 201.0600 33.3050 201.5550 33.3850 3 n_2091
+deselectAll
+selectInst g98636
+ecoRoute
+verify_drc
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox 200.975 32.78 202.04 34.03
+zoomBox 200.93200 33.13150 202.11900 33.68650
+selectMarker 201.4750 33.2800 201.5400 33.5300 2 1 6
+deselectAll
+selectWire 201.4750 33.2800 201.5550 33.5300 2 n_2091
+deleteSelectedFromFPlan
+selectVia 201.4750 33.2800 201.5550 33.4100 2 n_2091
+deleteSelectedFromFPlan
+selectMarker 201.4750 33.2800 201.5400 33.5300 2 1 6
+deleteSelectedFromFPlan
+violationBrowser -all -no_display_false -displayByLayer
+selectWire 201.2600 33.3050 201.5550 33.3850 3 n_2091
+deleteSelectedFromFPlan
+selectMarker 201.4750 33.2800 201.5400 33.5300 2 1 6
+deselectAll
+selectMarker 201.4750 33.2800 201.5400 33.5300 2 1 6
+deselectAll
+selectMarker 201.4750 33.2800 201.5400 33.5300 2 1 6
+deselectAll
+selectMarker 201.4750 33.2800 201.5400 33.5300 2 1 6
+deleteSelectedFromFPlan
+violationBrowser -all -no_display_false -displayByLayer
+selectWire 201.4600 30.0750 201.5400 35.0950 2 CTS_1
+deselectAll
+selectInst g98636
+deselectAll
+selectWire 201.4600 30.0750 201.5400 35.0950 2 CTS_1
+deleteSelectedFromFPlan
+zoomBox 200.69950 33.01050 202.34300 33.77900
+zoomBox 200.54650 32.94050 202.48100 33.84500
+ecoRoute
+verify_drc
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox 59.21 106.25 60.24 107.31
+zoomBox 59.21 106.25 60.24 107.31
+getNanoRouteMode -routeStrictlyHonorNonDefaultRule -quiet
+getNanoRouteMode -routeBottomRoutingLayer -quiet
+getNanoRouteMode -routeTopRoutingLayer -quiet
+selectInst g95873
+zoomBox 59.09500 106.45250 60.48850 107.10400
+zoomBox 59.31750 106.54150 60.32500 107.01250
+zoomBox 59.43050 106.61650 60.15850 106.95700
+zoomBox 59.31850 106.54600 60.32600 107.01700
+zoomBox 59.16500 106.48300 60.56000 107.13550
+panPage 0 -1
+zoomBox 58.81500 106.14400 61.08850 107.20700
+panPage 0 -1
+panPage 0 1
+zoomBox 59.25500 106.39850 60.44200 106.95350
+deselectAll
+selectInst g95873
+zoomBox 59.42850 106.50650 60.15800 106.84750
+deselectAll
+selectWire 59.6600 105.3150 59.7400 106.7250 2 CTS_11
+deleteSelectedFromFPlan
+selectWire 59.6300 106.6150 60.3700 106.7550 3 CTS_11
+zoomBox 59.17200 106.32550 60.57050 106.97950
+deselectAll
+selectMarker 59.7100 106.7500 59.7400 106.8100 2 1 2
+deselectAll
+selectWire 59.6300 106.6150 60.3700 106.7550 3 CTS_11
+deleteSelectedFromFPlan
+selectInst g95873
+ecoRoute
+verify_drc
+violationBrowser -all -no_display_false -displayByLayer
+report_timing
+violationBrowserClose
+saveDesign FINAL.enc

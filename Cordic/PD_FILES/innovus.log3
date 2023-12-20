@@ -1,0 +1,14090 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.14-s095_1, built Mon Apr 19 14:41:42 PDT 2021
+Options:	
+Date:		Fri Sep 15 16:36:24 2023
+Host:		sys128 (x86_64 w/Linux 3.10.0-1062.el7.x86_64) (8cores*16cpus*11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz 16384KB)
+OS:		CentOS Linux release 7.7.1908 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 20.11 fill procedures
+<CMD> win
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat Cordic
+#% Begin load design ... (date=09/15 16:36:41, mem=670.5M)
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'Cordic' saved by 'Innovus' '20.14-s095_1' on 'Tue Sep 12 13:04:45 2023'.
+% Begin Load MMMC data ... (date=09/15 16:36:42, mem=671.6M)
+% End Load MMMC data ... (date=09/15 16:36:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=672.4M, current mem=672.4M)
+BEST WORST
+
+Loading LEF file /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/libs/lef/gsclib045_tech.lef ...
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PO', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_DIFF', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PSUB', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PIMP', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NIMP', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NWELL', 
+
+Loading LEF file /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/libs/lef/gsclib045_macro.lef ...
+Set DBUPerIGU to M2 pitch 400.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+viaInitial starts at Fri Sep 15 16:36:42 2023
+viaInitial ends at Fri Sep 15 16:36:42 2023
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/viewDefinition.tcl
+Reading BEST timing library '/home/internals/Desktop/gpdk045_libfiles_1/fast.lib' ...
+Read 477 cells in library 'fast' 
+Reading WORST timing library '/home/internals/Desktop/gpdk045_libfiles_1/slow.lib' ...
+Read 477 cells in library 'slow' 
+*** End library_loading (cpu=0.01min, real=0.00min, mem=21.0M, fe_cpu=0.18min, fe_real=0.30min, fe_mem=927.3M) ***
+% Begin Load netlist data ... (date=09/15 16:36:42, mem=693.1M)
+*** Begin netlist parsing (mem=927.3M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'OAI211XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'OAI211XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'CLKAND2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'CLKAND2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'SEDFFHQX1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'SEDFFHQX1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'EDFFTRX2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'EDFFTRX2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'NOR3X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'NOR3X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'DFFHQX4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'DFFHQX4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'CLKMX2X8' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'CLKMX2X8' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'OAI222XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'OAI222XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'OA22XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'OA22XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 477 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/Cordic.v.bin'
+Reading binary database version 2 in 1-threaded mode
+
+*** Memory Usage v#1 (Current mem = 935.336M, initial mem = 284.301M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=935.3M) ***
+% End Load netlist data ... (date=09/15 16:36:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=703.0M, current mem=703.0M)
+Top level cell is Cordic.
+Hooked 954 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell Cordic ...
+*** Netlist is unique.
+** info: there are 965 modules.
+** info: there are 7644 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 973.762M, initial mem = 284.301M) ***
+*info: set bottom ioPad orient R0
+Horizontal Layer M1 offset = 190 (guessed)
+Vertical Layer M2 offset = 200 (derived)
+Suggestion: specify LAYER OFFSET in LEF file
+Reason: hard to extract LAYER OFFSET from standard cells
+Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in unpreferred direction.
+Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in preferred direction.
+Generated pitch 0.4 in M10 is different from 0.48 defined in technology file in unpreferred direction.
+Generated pitch 0.5 in M10 is different from 0.48 defined in technology file in preferred direction.
+Generated pitch 0.2 in M9 is different from 0.33 defined in technology file in unpreferred direction.
+Generated pitch 0.4 in M9 is different from 0.33 defined in technology file in preferred direction.
+Generated pitch 0.19 in M2 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.2 in M1 is different from 0.19 defined in technology file in unpreferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Set Shrink Factor to 0.90000
+Loading preference file /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/gui.pref.tcl ...
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'CoreSite'.
+*Info: initialize multi-corner CTS.
+Total number of combinational cells: 317
+Total number of sequential cells: 150
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX4 CLKBUFX6 CLKBUFX8 BUFX8 CLKBUFX3 BUFX6
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 INVX1 CLKINVX4 CLKINVX6 INVX12 INVX2 INVX3 CLKINVX8 INVX20 INVX4 INVX6 INVX16 INVXL INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X4 DLY2X4 DLY3X4 DLY1X1 DLY4X1 DLY2X1 DLY3X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/Cordic.fp.gz (mem = 1198.9M).
+% Begin Load floorplan data ... (date=09/15 16:36:43, mem=956.5M)
+*info: reset 8584 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 417600 406980)
+Horizontal Layer M1 offset = 190 (guessed)
+Vertical Layer M2 offset = 200 (derived)
+Suggestion: specify LAYER OFFSET in LEF file
+Reason: hard to extract LAYER OFFSET from standard cells
+Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in unpreferred direction.
+Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in preferred direction.
+Generated pitch 0.4 in M10 is different from 0.48 defined in technology file in unpreferred direction.
+Generated pitch 0.5 in M10 is different from 0.48 defined in technology file in preferred direction.
+Generated pitch 0.2 in M9 is different from 0.33 defined in technology file in unpreferred direction.
+Generated pitch 0.4 in M9 is different from 0.33 defined in technology file in preferred direction.
+Generated pitch 0.19 in M2 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.2 in M1 is different from 0.19 defined in technology file in unpreferred direction.
+ ... processed partition successfully.
+Reading binary special route file /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/Cordic.fp.spr.gz (Created by Innovus v20.14-s095_1 on Tue Sep 12 13:04:44 2023, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=957.3M, current mem=957.3M)
+There are 17 nets with weight being set
+There are 17 nets with bottomPreferredRoutingLayer being set
+There are 17 nets with avoidDetour being set
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=09/15 16:36:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=958.4M, current mem=958.4M)
+Reading congestion map file /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/Cordic.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=09/15 16:36:43, mem=958.7M)
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=09/15 16:36:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=960.1M, current mem=960.1M)
+Loading place ...
+% Begin Load placement data ... (date=09/15 16:36:43, mem=960.1M)
+Reading placement file - /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/Cordic.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v20.14-s095_1 on Tue Sep 12 13:04:44 2023, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1203.9M) ***
+Total net length = 8.923e+04 (4.233e+04 4.690e+04) (ext = 1.736e+03)
+% End Load placement data ... (date=09/15 16:36:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=964.8M, current mem=962.7M)
+Reading PG file /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/Cordic.pg.gz, version#2, (Created by Innovus v20.14-s095_1 on       Tue Sep 12 13:04:44 2023)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1199.9M) ***
+% Begin Load routing data ... (date=09/15 16:36:43, mem=962.9M)
+Reading routing file - /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/Cordic.route.gz.
+Reading Innovus routing data (Created by Innovus v20.14-s095_1 on Tue Sep 12 13:04:44 2023 Format: 20.1) ...
+*** Total 8524 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1213.9M) ***
+% End Load routing data ... (date=09/15 16:36:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=977.0M, current mem=976.0M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/Cordic.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1219.9M) ***
+Reading dirtyarea snapshot file /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/Cordic.db.da.gz (Create by Innovus v20.14-s095_1 on Tue Sep 12 13:04:44 2023, version: 4).
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 2 active RC Corners ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+Type 'man IMPEXT-6202' for more detail.
+Reading Capacitance Table File /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/libs/mmmc/cap_table.capTbl ...
+Cap table was created using Encounter 10.10-b056_1.
+Process name: cln28hpl_1p10m+alrdl_5x2yu2yz_typical.
+Set Shrink Factor to 0.90000
+Reading Capacitance Table File /home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/libs/mmmc/cap_table.capTbl ...
+Cap table was created using Encounter 10.10-b056_1.
+Process name: cln28hpl_1p10m+alrdl_5x2yu2yz_typical.
+Set Shrink Factor to 0.90000
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: BEST
+    RC-Corner Name        : BEST
+    RC-Corner Index       : 0
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : '/home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/libs/mmmc/cap_table.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/libs/mmmc/BEST/qrcTechFile'
+ 
+ Analysis View: WORST
+    RC-Corner Name        : WORST
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/libs/mmmc/cap_table.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/home/internals/Desktop/Cordic/PD_FILES/FINAL.enc.dat/libs/mmmc/BEST/qrcTechFile'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+Creating RPSQ from WeeR and WRes ...
+Start generating vias ...
+Generating vias for default rule ...
+Total 103 vias inserted to default rule.
+Via generation for default rule completed.
+Generating vias for nondefault rule VLMDefaultSetup ...
+Total 92 vias added to nondefault rule VLMDefaultSetup
+Via generation for nondefault rule VLMDefaultSetup completed.
+Generating vias for nondefault rule 2w2s ...
+Total 82 vias added to nondefault rule 2w2s
+Via generation for nondefault rule 2w2s completed.
+Via generation completed successfully.
+% Begin Load power constraints ... (date=09/15 16:36:44, mem=993.6M)
+% End Load power constraints ... (date=09/15 16:36:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=993.7M, current mem=993.7M)
+BEST WORST
+% Begin load AAE data ... (date=09/15 16:36:44, mem=1019.9M)
+AAE DB initialization (MEM=1283.45 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=09/15 16:36:44, total cpu=0:00:00.2, real=0:00:00.0, peak res=1028.1M, current mem=1028.1M)
+Restoring CCOpt config...
+  Extracting original clock gating for clk...
+    clock_tree clk contains 844 sinks and 0 clock gates.
+    Extraction for clk complete.
+  Extracting original clock gating for clk done.
+  The skew group clk/constrain was created. It contains 844 sinks and 1 sources.
+  The skew group clk/constrain was created. It contains 844 sinks and 1 sources.
+Restoring CCOpt config done.
+Total number of combinational cells: 317
+Total number of sequential cells: 150
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX4 CLKBUFX6 CLKBUFX8 BUFX8 CLKBUFX3 BUFX6
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 INVX1 CLKINVX4 CLKINVX6 INVX12 INVX2 INVX3 CLKINVX8 INVX20 INVX4 INVX6 INVX16 INVXL INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X4 DLY2X4 DLY3X4 DLY1X1 DLY4X1 DLY2X1 DLY3X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.14-s095_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+#% End load design ... (date=09/15 16:36:44, total cpu=0:00:02.0, real=0:00:03.0, peak res=1050.4M, current mem=1033.9M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-155            6  ViaRule only supports routing/cut layer,...
+WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+WARNING   IMPVL-159          954  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+*** Message Summary: 964 warning(s), 0 error(s)
+
+<CMD> verify_drc
+ *** Starting Verify DRC (MEM: 1436.2) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+  VERIFY DRC ...... Using new threading
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU: 0:00:01.2  ELAPSED TIME: 1.00  MEM: 32.0M) ***
+
+<CMD> report_timing
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: Cordic
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Extraction called for design 'Cordic' of instances=7644 and nets=8584 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design Cordic.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 0.90000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+Creating RPSQ from WeeR and WRes ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 1518.469M)
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1529.52)
+Total number of fetched objects 8522
+End delay calculation. (MEM=1569.65 CPU=0:00:00.6 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1542.57 CPU=0:00:00.7 REAL=0:00:00.0)
+Path 1: VIOLATED Setup Check with Pin gen_pipe[5].Pipe_Zo_reg[5]/CK 
+Endpoint:   gen_pipe[5].Pipe_Zo_reg[5]/D (^) checked with  leading edge of 'clk'
+Beginpoint: ena                          (^) triggered by  leading edge of 
+'VCLK'
+Path Groups: {clk}
+Analysis View: BEST
+Other End Arrival Time          0.001
+- Setup                         0.138
++ Phase Shift                   1.000
+- Uncertainty                   0.100
+= Required Time                 0.763
+- Arrival Time                  3.033
+= Slack Time                   -2.270
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.600
+     = Beginpoint Arrival Time            0.600
+     +----------------------------------------------------------------------------------+ 
+     |          Instance          |     Arc     |   Cell   | Delay | Arrival | Required | 
+     |                            |             |          |       |  Time   |   Time   | 
+     |----------------------------+-------------+----------+-------+---------+----------| 
+     |                            | ena ^       |          |       |   0.600 |   -1.670 | 
+     | gen_pipe[5].Pipe_g7964     | B ^ -> Y v  | NAND2BX4 | 2.236 |   2.836 |    0.565 | 
+     | gen_pipe[5].Pipe_g7441     | A1 v -> Y ^ | OAI222X1 | 0.197 |   3.033 |    0.762 | 
+     | gen_pipe[5].Pipe_Zo_reg[5] | D ^         | DFFX4    | 0.000 |   3.033 |    0.763 | 
+     +----------------------------------------------------------------------------------+ 
+
+<CMD> help *report_timing
+Single match found:
+Usage: report_timing
+    .nf
+    .P
+    Product
+    Version
+    
+    
+    
+    
+    20.14
+    
+    
+    
+    Cadence
+    Design
+    Systems,
+    Inc.
+    
+    .fi
+    .TH
+    report_timing
+    
+    20.14
+    "Thu
+    Mar
+    25
+    01:45:04
+    2021"
+    
+    .SH
+    Name
+    \fBreport_timing\fR
+    .SH
+    Syntax
+    \fBreport_timing\fR
+    
+    [-help]
+    
+    [-check_clocks]
+    
+    [-check_type {setup hold clock_gating_setup clock_gating_hold
+    clock_gating_pulse_width data_setup data_hold recovery removal
+    pulse_width clock_period clock_separation skew no_change_setup no_change_hold}]
+    
+    [-debug {unconstrained | time_borrow | cppr_point}]
+    
+    [-delay_limit <float>]
+    
+    
+    [-derate_summary]
+    
+    [-format <column_list>]
+    
+    
+    [-hpin]
+    
+    
+    [-max_slack <float>]
+    
+    
+    [-min_slack <float>]
+    
+    [-net]
+    
+    
+    [-path_exceptions {applied ignored all}]
+    
+    
+    [-path_group <groupname_list>]
+    
+    [-path_type {end summary full full_clock end_slack_only summary_slack_only}]
+    
+    [-retime {aocv path_slew_propagation aocv_path_slew_propagation}]
+    
+    [-retime_format {manual | retime_compare | retime_replace}]
+    
+    [-retime_mode {path exhaustive}]
+    
+    [-skip_io_paths]
+    
+    
+    [-unique_pins]
+    
+    
+    [-view <viewName>]
+    
+    [-worst_rc_corner]
+    
+    
+    [> <filename[.gz]>]
+    
+    
+    [>> <filename[.gz]>]
+    
+    
+    [-late | -early]
+    
+    
+    [-rise | -fall]
+    
+    
+    [-begin_end_pair | [[ -max_paths <integer>]   [-nworst <integer>]]]
+    
+    
+    [-unconstrained | -point_to_point]
+    
+    
+    [-collection | -machine_readable | -tcl_list]
+    
+    
+    [-not_through <object_list> | -not_rise_through <object_list>
+    | -not_fall_through <object_list>]
+    
+    
+    [[-from <pin_list> | -from_rise <pin_list> | -from_fall <pin_list>]
+      [-clock_from <clk_signame_list> [-edge_from {lead trail}]]
+      [-through <pin_list> | -through_rise <pin_list> | -through_fall
+    <pin_list>]   [-to <pin_list> | -to_rise <pin_list> | -to_fall
+    <pin_list>]   [-clock_to <clk_signame_list> [-edge_to {lead trail}]]]
+    
+    .P
+    Generates
+    a
+    timing
+    report
+    that
+    provides
+    information
+    about
+    the
+    various
+    paths
+    in
+    the
+    design.
+    .P
+    The
+    reports
+    typically
+    contain
+    data
+    on
+    the
+    delay
+    through
+    the
+    entire
+    path.
+    The
+    start
+    node
+    and
+    the
+    end
+    node
+    of
+    each
+    path
+    is
+    identified.
+    .P
+    The
+    timing
+    report
+    contains
+    the
+    following
+    information:
+    .RS
+    
+    "*"
+    2
+    The
+    slack
+    times
+    of
+    the
+    arriving
+    signal
+    at
+    the
+    end
+    node
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    start
+    node
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    associated
+    transitions
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    signal
+    required
+    times
+    and
+    the
+    actual
+    signal
+    arrival
+    times
+    .RE
+    .RS
+    
+    "*"
+    2
+    Summary
+    of
+    propagated
+    vs
+    ideal
+    status
+    of
+    launching
+    and
+    capturing
+    clocks
+    .RE
+    .RS
+    
+    "*"
+    2
+    Any
+    phase
+    shifts
+    applied
+    when
+    evaluating
+    timing
+    checks
+    .RE
+    .RS
+    
+    "*"
+    2
+    Any
+    CPPR
+    values
+    applied
+    to
+    timing
+    check
+    evaluation
+    .RE
+    .P
+    The
+    report_timing
+    command
+    output
+    accomadates
+    both
+    the
+    instance
+    pin
+    names
+    and
+    net
+    names
+    in
+    the
+    same
+    column.
+    Since
+    both
+    instance
+    pin
+    names
+    and
+    net
+    names
+    can
+    be
+    long,
+    to
+    save
+    screen
+    space
+    alternating
+    instance
+    pin
+    and
+    net
+    names
+    (depending
+    on
+    whether
+    the
+    row
+    displays
+    gate
+    delay
+    or
+    net
+    delay)
+    are
+    reported
+    in
+    a
+    single
+    column.
+    .P
+    When
+    the
+    timing_report_timing_header_detail_info
+    timing
+    global
+    variable
+    is
+    set
+    to
+    extended,
+    the
+    software
+    generates
+    timing
+    reports
+    with
+    additional
+    header
+    information,
+    that
+    includes
+    the
+    following
+    details:
+    .RS
+    
+    "*"
+    2
+    The
+    analysis
+    mode
+    -
+    best
+    case
+    worst
+    case
+    or
+    on
+    chip
+    variation
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    active
+    views
+    (displayed
+    only
+    in
+    MMMC
+    mode)
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    clock
+    reconvergence
+    pessimism
+    (CPPR)
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    latch
+    slack
+    mode
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    specified
+    clock
+    propagation
+    value
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    delay
+    calculation
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    specified
+    delay
+    calculation
+    engine
+    .RE
+    .P
+    When
+    timing_report_group_based_mode
+    global
+    variable
+    is
+    set
+    to
+    true,
+    paths
+    are
+    grouped
+    by
+    clock
+    domain.
+    In
+    this
+    mode,
+    the
+    report_timing
+    command
+    will
+    have
+    the
+    following
+    four
+    types
+    of
+    groups:
+    .RS
+    
+    "*"
+    2
+    Clock
+    gating
+    group:
+    This
+    is
+    an
+    internal
+    group.
+    This
+    group
+    reports
+    the
+    clock
+    gating
+    check
+    type
+    paths.
+    .RE
+    .RS
+    
+    "*"
+    2
+    Asynchronous
+    group:
+    This
+    is
+    also
+    an
+    internal
+    group
+    and
+    reports
+    the
+    asynchronous
+    check
+    type
+    paths.
+    
+    "*"
+    2
+    Groups
+    for
+    all
+    the
+    clocks
+    in
+    the
+    design:
+    These
+    are
+    also
+    internal
+    groups,
+    classified
+    on
+    the
+    basis
+    of
+    each
+    reference
+    clock.
+    Paths
+    belonging
+    to
+    each
+    reference
+    clock
+    are
+    reported
+    separately
+    under
+    each
+    clock
+    name's
+    group.
+    These
+    groups
+    do
+    not
+    honor
+    the
+    clock
+    gating/asynchronous
+    check
+    types.
+    Suppose
+    there
+    are
+    three
+    clocks
+    C1,
+    C2,
+    and
+    C3
+    in
+    the
+    design,
+    then
+    three
+    groups
+    will
+    be
+    reported
+    for
+    each
+    of
+    these
+    clocks.
+    The
+    endpoint
+    sharing
+    the
+    same
+    reference
+    clock
+    will
+    be
+    part
+    of
+    the
+    same
+    group.
+    In
+    case
+    the
+    endpoint
+    belongs
+    to
+    multiple
+    groups
+    then
+    it
+    will
+    be
+    reported
+    separately
+    in
+    each
+    group.
+    .RE
+    .RS
+    
+    "*"
+    2
+    Default
+    group:
+    This
+    is
+    an
+    internal
+    group
+    -
+    for
+    combinational
+    max
+    delay
+    or
+    min
+    delay
+    paths.
+    .RE
+    .RS
+    
+    "*"
+    2
+    User-Defined
+    Groups:
+    These
+    are
+    user-defined
+    path
+    groups.
+    These
+    are
+    created
+    by
+    users
+    with
+    single
+    or
+    multiple
+    constraints.
+    These
+    groups
+    honor
+    all
+    the
+    check
+    types.
+    These
+    groups
+    are
+    now
+    reported
+    by
+    default.
+    .RE
+    .P
+    By
+    default,
+    the
+    timing_report_group_based_mode
+    global
+    variable
+    is
+    set
+    to
+    false.
+    .P
+    Note:
+    The
+    global
+    does
+    not
+    honor
+    user-defined
+    path
+    groups
+    so
+    the
+    paths
+    will
+    still
+    be
+    grouped
+    by
+    different
+    clocks.
+    .P
+    In
+    this
+    mode,
+    the
+    following
+    commands
+    will
+    have
+    the
+    same
+    behavior
+    and
+    and
+    can
+    be
+    used
+    interchangeably:
+    .P
+    report_timing
+    -path_group
+    <Clock_Name>
+    .P
+    report_timing
+    -clock_to
+    <Clock_Name>
+    .P
+    The
+    report_timing
+    command
+    supports
+    multi-threaded
+    reporting.
+    You
+    can
+    make
+    the
+    following
+    settings
+    to
+    enable
+    multi-threaded
+    reporting:
+    .P
+    setMultiCpuUsage
+    -localCpu
+    <number_of_CPU>
+    .P
+    set_table_style
+    -no_frame_fix_width
+    [-nosplit]
+    .P
+    Note:
+    When
+    timing_allow_input_delay_on_clock_source
+    global
+    variable
+    is
+    enabled
+    and
+    the
+    set_input_delay
+    command
+    is
+    applied
+    to
+    a
+    clock
+    input,
+    the
+    specified
+    delay
+    value
+    will
+    be
+    considered
+    as
+    the
+    source
+    clock
+    latency
+    for
+    clock
+    paths
+    and
+    as
+    regular
+    data
+    path
+    arrival
+    time
+    for
+    clock
+    source
+    paths.
+    
+    .SH
+    Parameters
+    
+    
+    "\fB{> | >>}
+    <filename>\fR"
+    When
+    specified
+    with
+    >,
+    writes
+    the
+    report
+    to
+    the
+    specified
+    file
+    name.
+    If
+    the
+    file
+    already
+    exists,
+    the
+    software
+    overwrites
+    it.
+    
+    When
+    specified
+    with
+    >>,
+    writes
+    the
+    report
+    to
+    the
+    specified
+    file
+    name.
+    If
+    the
+    file
+    already
+    exists,
+    the
+    software
+    concatenates
+    the
+    report
+    to
+    the
+    end
+    of
+    the
+    file.
+    
+    The
+    filename
+    parameter
+    must
+    be
+    the
+    last
+    argument
+    in
+    the
+    list.
+    The
+    filename
+    and
+    -tcl_list
+    parameters
+    are
+    mutually
+    exclusive;
+    you
+    cannot
+    specify
+    them
+    together.
+    
+    Note:
+    To
+    write
+    a
+    compressed
+    report,
+    add
+    the
+    .gz
+    extension
+    to
+    the
+    file
+    name.
+    
+    Default:
+    Report
+    is
+    displayed
+    on
+    standard
+    output
+    without
+    being
+    saved.
+    
+    Note:
+    The
+    last
+    argument
+    specified
+    in
+    the
+    report_timing
+    command
+    is
+    not
+    considered
+    a
+    filename.
+    
+    "\fB-begin_end_pair\fR"
+    Reports
+    all
+    violating
+    paths
+    between
+    unique
+    source
+    and
+    target
+    register
+    pairs.
+    To
+    report
+    other
+    paths,
+    specify
+    this
+    parameter
+    with
+    the
+    -max_slack
+    parameter.
+    
+    Paths
+    are
+    not
+    sorted
+    by
+    slack;
+    instead,
+    paths
+    with
+    the
+    same
+    source
+    pins
+    are
+    reported
+    adjacent
+    to
+    each
+    other.
+    
+    When
+    specified
+    with
+    the
+    -from,
+    -through,
+    or
+    -to
+    parameters,
+    the
+    software
+    only
+    reports
+    the
+    unique
+    register
+    pair
+    paths
+    that
+    match
+    the
+    path
+    description.
+    
+    Note:
+    You
+    cannot
+    specify
+    this
+    parameter
+    with
+    the
+    -max_paths,
+    -nworst,
+    -unique_pins,
+    or
+    -min_slack
+    parameters.
+    
+    The
+    report_timing
+    -begin_end_pair
+    parameter
+    will
+    always
+    report
+    the
+    paths
+    grouped
+    by
+    path_groups
+    irrespective
+    of
+    timing_report_group_based_mode
+    global
+    variable
+    setting.
+    
+    "\fB-check_clocks\fR"
+    Generates
+    reports
+    based
+    on
+    timing
+    paths
+    on
+    the
+    clock
+    network
+    instead
+    of
+    the
+    standard
+    timing
+    to
+    data
+    endpoints.
+    This
+    report
+    includes
+    clock
+    paths
+    that
+    end
+    at
+    the
+    reference
+    end
+    of
+    a
+    check
+    or
+    a
+    clock
+    gating
+    end
+    point.
+    
+    Default:
+    Data
+    paths
+    and
+    all
+    the
+    other
+    clock
+    paths
+    (for
+    example,
+    a
+    clock
+    path
+    ending
+    at
+    a
+    D
+    pin
+    of
+    a
+    register)
+    are
+    reported.
+    
+    "\fB-check_type
+    
+    <check_type>\fR"
+    Reports
+    only
+    the
+    paths
+    that
+    end
+    at
+    the
+    specified
+    timing
+    check.
+    
+    The
+    following
+    check
+    types
+    can
+    be
+    reported
+    when
+    the
+    software
+    is
+    in
+    setup
+    analysis
+    mode:
+    setup,
+    skew,
+    pulse_width,
+    clock_period,
+    clock_gating_setup,
+    clock_gating_pulse_width,
+    data_setup,
+    recovery,
+    clock_separation,
+    and
+    no_change_setup.
+    
+    The
+    following
+    check
+    types
+    can
+    be
+    reported
+    when
+    the
+    software
+    is
+    in
+    hold
+    analysis
+    mode:
+    hold,
+    clock_gating_hold,
+    data_hold,
+    removal,
+    and
+    no_change_hold.
+    
+    If
+    the
+    software
+    is
+    in
+    simultaneous
+    setup
+    and
+    hold
+    analysis
+    mode,
+    all
+    of
+    the
+    check
+    types
+    listed
+    above
+    can
+    be
+    reported.
+    
+    By
+    default,
+    the
+    following
+    checks
+    are
+    reported:
+    .RS
+    
+    "*"
+    2
+    setup
+    
+    "*"
+    2
+    hold
+    
+    "*"
+    2
+    clock_gating_setup
+    
+    "*"
+    2
+    clock_gating_hold
+    
+    "*"
+    2
+    data_setup
+    
+    "*"
+    2
+    data_hold
+    
+    "*"
+    2
+    recovery
+    
+    "*"
+    2
+    removal
+    
+    "*"
+    2
+    no_change_setup
+    .RE
+    .RS
+    
+    "*"
+    2
+    no_change_hold
+    .RE
+    
+    
+    You
+    can
+    use
+    the
+    -check_type
+    parameter
+    to
+    specify
+    the
+    following
+    clock
+    style
+    checks:
+    .RS
+    
+    "*"
+    2
+    pulse_width
+    
+    "*"
+    2
+    clock_gating_pulse_width
+    
+    "*"
+    2
+    clock_period
+    
+    "*"
+    2
+    Skew
+    
+    "*"
+    2
+    clock_separation
+    .RE
+    
+    
+    Do
+    not
+    use
+    this
+    parameter
+    with
+    the
+    -unconstrained,
+    -early,
+    or
+    -late
+    parameters.
+    
+    Note:
+    The
+    report_timing
+    command
+    does
+    not
+    perform
+    skew
+    checks
+    by
+    default.
+    
+    "\fB-clock_from
+    
+    <clk_signame_list>\fR"
+    Generates
+    reports
+    based
+    on
+    source
+    clock
+    waveform(s).
+    Reports
+    only
+    those
+    paths
+    whose
+    source
+    clocks
+    are
+    the
+    clock
+    signals
+    in
+    clk_signame_list.
+    
+    "\fB-clock_to
+    
+    <clk_signame_list>\fR"
+    Generates
+    reports
+    based
+    on
+    target
+    clock
+    waveform(s).
+    Reports
+    only
+    those
+    paths
+    whose
+    target
+    clocks
+    are
+    the
+    clock
+    signals
+    in
+    clk_signame_list.
+    
+    "\fB-collection\fR"
+    Returns
+    a
+    collection
+    of
+    timing
+    paths.
+    This
+    is
+    useful
+    for
+    performing
+    Tcl
+    queries
+    on
+    selected
+    timing
+    reports.
+    
+    To
+    generate
+    a
+    collection
+    of
+    paths
+    analyzed
+    by
+    Path
+    Based
+    Analysis
+    (PBA),
+    you
+    can
+    use
+    the
+    -retime
+    parameter.
+    
+    Note
+    :
+    This
+    parameter
+    is
+    not
+    supported
+    in
+    DMMMC
+    mode.
+    
+    "\fB-debug
+    {unconstrained | time_borrow | cppr_point}\fR"
+    You
+    can
+    specify
+    the
+    following
+    option
+    for
+    debugging:
+    .RS
+    
+    "*"
+    2
+    unconstrained:
+    Determines
+    the
+    reasons
+    for
+    a
+    path
+    to
+    be
+    unconstrained.
+    The
+    report
+    output
+    will
+    list
+    all
+    the
+    applicable
+    arcs/constraints
+    that
+    could
+    not
+    constrain
+    the
+    paths,
+    along
+    with
+    the
+    reasons.
+    
+    "*"
+    2
+    time_borrow:
+    Reports
+    time
+    borrowing
+    calculations.
+    Time
+    borrowing
+    is
+    the
+    amount
+    of
+    time
+    borrowed
+    by
+    a
+    previous
+    logic.
+    
+    "*"
+    2
+    cppr_point:
+    Reports
+    the
+    CPPR
+    point
+    information
+    for
+    the
+    reported
+    paths.
+    .RE
+    
+    
+    "\fB-delay_limit
+    <float>\fR"
+    Specifies
+    the
+    path
+    delay
+    limit
+    for
+    unconstrained
+    paths
+    (-unconstrained
+    option).
+    
+    For
+    early
+    paths
+    (-early
+    option),
+    reports
+    only
+    those
+    paths
+    with
+    path
+    delay
+    less
+    than
+    the
+    delay
+    limit.
+    For
+    late
+    paths
+    (-late
+    option)
+    reports
+    only
+    those
+    paths
+    with
+    path
+    delay
+    more
+    than
+    the
+    delay
+    limit.
+    
+    Note:
+    The
+    -delay_limit
+    option
+    only
+    can
+    be
+    used
+    in
+    conjunction
+    with
+    the
+    -unconstrained
+    option.
+    
+    "\fB-derate_summary\fR"
+    Generates
+    an
+    AOCV
+    derating
+    summary
+    table
+    for
+    the
+    launch
+    and
+    capture
+    paths,
+    in
+    addition
+    to
+    the
+    timing
+    report.
+    
+    "\fB-early
+    |
+    -late\fR"
+    Generates
+    the
+    timing
+    report
+    for
+    early
+    paths
+    (hold
+    checks)
+    or
+    late
+    paths
+    (setup
+    checks).
+    
+    Default:
+    -late
+    
+    Note:
+    If
+    you
+    specify
+    a
+    check,
+    setup
+    or
+    hold,
+    using
+    the
+    set_analysis_mode
+    command,
+    the
+    report_timing
+    command
+    reports
+    that
+    check
+    by
+    default.
+    
+    "\fB-edge_from
+    {lead | trail}\fR"
+    Generates
+    reports
+    based
+    on
+    source
+    clock
+    edge,
+    either
+    leading
+    or
+    trailing.
+    
+    Note:
+    The
+    -edge_from
+    parameter
+    only
+    can
+    be
+    used
+    in
+    conjunction
+    with
+    the
+    -clock_from
+    parameter.
+    
+    Default:
+    Generates
+    reports
+    based
+    on
+    both
+    source
+    clock
+    edges
+    
+    "\fB-edge_to
+    {lead | trail}\fR"
+    Generates
+    reports
+    based
+    on
+    the
+    target
+    clock
+    edge,
+    either
+    leading
+    or
+    trailing.
+    
+    Note:
+    The
+    -edge_to
+    parameter
+    only
+    can
+    be
+    used
+    in
+    conjunction
+    with
+    the
+    -clock_to
+    parameter.
+    
+    Default:
+    Generates
+    reports
+    based
+    on
+    both
+    target
+    clock
+    edges
+    
+    "\fB-format
+    <column_list>\fR"
+    Formats
+    the
+    report
+    according
+    to
+    the
+    column_list.
+    The
+    column_list
+    specifies
+    which
+    columns
+    to
+    display
+    in
+    the
+    timing
+    report
+    and
+    the
+    order
+    in
+    which
+    they
+    appear.
+    
+    You
+    can
+    use
+    the
+    -format
+    parameter
+    to
+    customize
+    the
+    reports
+    to
+    your
+    needs
+    by
+    requesting
+    the
+    exact
+    fields
+    in
+    which
+    you
+    have
+    an
+    interest.
+    The
+    valid
+    format
+    columns
+    are:
+    
+    adjustment,
+    abs_delay_err,
+    abs_slew_err,
+    annotation,
+    aocv_adj_stages,
+    aocv_derate,
+    aocv_weight,
+    arc,
+    arrival,
+    arrival_mean,
+    arrival_sigma,
+    cell,
+    delay,
+    delay_mean,
+    delay_sigma,
+    direction,
+    edge,
+    fanin,
+    fanout,
+    flags,
+    hpin,
+    incr_delay,
+    instance,
+    instance_location,
+    latch_window,
+    load,
+    module,
+    net,
+    pct_delay_err,
+    pct_slew_err,
+    phase,
+    phys_info,
+    pin,
+    pin_load,
+    pin_location,
+    power_domain,
+    required,
+    retime_delay,
+    retime_delay_mean,
+    retime_delay_sigma,
+    retime_slew,
+    retime_slew_mean,
+    retime_slew_sigma,
+    stage_count,
+    slew,
+    slew_mean,
+    slew_sigma,
+    socv_derate,
+    spice_arrival,
+    spice_delay,
+    spice_slew,
+    stolen,
+    timing_point,
+    total_derate,
+    user_derate,
+    when_cond,
+    wire_load,
+    wlmodel
+    
+    For
+    example:
+    
+    -format
+    {hpin cell delay required arrival required edge}
+    
+    See
+    TableOptionsTable
+    for
+    a
+    list
+    of
+    valid
+    options.
+    
+    The
+    default
+    net
+    format
+    (with
+    -net
+    option)
+    for
+    the
+    full
+    path
+    is:
+    
+    
+    {hpin edge net cell delay arrival required}.
+    
+    If
+    the
+    -unconstrained
+    option
+    is
+    specified,
+    the
+    required
+    column
+    is
+    not
+    displayed.
+    
+    The
+    adjustment
+    column
+    is
+    automatically
+    added
+    to
+    the
+    timing
+    report.
+    To
+    disable
+    this
+    feature
+    you
+    can
+    set
+    the
+    report_timing_default_adjustment_column
+    global
+    variable
+    to
+    false.
+    
+    You
+    can
+    also
+    use
+    a
+    combination
+    of
+    the
+    -format
+    and
+    -tcl_list
+    parameters
+    to
+    integrate
+    the
+    timing
+    reports
+    into
+    your
+    Tcl
+    scripts.
+    You
+    can
+    use
+    the
+    -from
+    parameter
+    to
+    limit
+    the
+    number
+    of
+    paths
+    reported,
+    and
+    to
+    find
+    specific
+    paths
+    in
+    the
+    design.
+    
+    The
+    -format
+    option
+    cannot
+    be
+    used
+    with
+    the
+    -path_type
+    end
+    or
+    -path_type
+    summary
+    options.
+    
+    You
+    can
+    change
+    the
+    re-timing
+    columns
+    by
+    using
+    the
+    timing_report_retime_formatting_modeglobal
+    variable.
+    
+    "\fB{-from | -from_rise | -from_fall}
+    <pin_list>\fR"
+    Reports
+    paths
+    starting
+    from
+    the
+    object(s)
+    specified
+    in
+    the
+    <pin_list>.
+    The
+    supported
+    objects
+    are
+    pins
+    and
+    ports.
+    
+    Using
+    -from_rise
+    (or
+    -from_fall)
+    specifies
+    that
+    the
+    rising
+    (or
+    falling)
+    edge
+    of
+    the
+    signals
+    on
+    the
+    pins/ports
+    in
+    the
+    <pin_list>are
+    the
+    start
+    of
+    the
+    paths.
+    
+    You
+    can
+    use
+    this
+    option
+    with
+    the
+    -through
+    and
+    -to
+    parameters
+    for
+    specifying
+    particular
+    paths
+    in
+    the
+    design.
+    
+    Note
+    :
+    These
+    parameters
+    do
+    not
+    allow
+    clock
+    objects.
+    You
+    can
+    use
+    the
+    
+    -clock_from
+    
+    and
+    
+    -clock_to
+    
+    parameters
+    to
+    reference
+    clock
+    waveforms.
+    
+    "\fB-hpin
+    
+    \fR"
+    Prints
+    all
+    hierarchical
+    crossings
+    of
+    an
+    arc
+    under
+    hpin
+    column
+    in
+    report_timing
+    table.
+    
+    "\fB-machine_readable\fR"
+    Generates
+    detailed
+    timing
+    report
+    in
+    machine-readable
+    format.
+    This
+    report
+    is
+    used
+    for
+    debugging
+    timing
+    results
+    using
+    the
+    timing
+    debug
+    feature.
+    
+    "\fB-max_paths
+    <integer>\fR"
+    Reports
+    the
+    specified
+    number
+    of
+    worst
+    paths
+    in
+    the
+    design,
+    with
+    maximum
+    of
+    nworst
+    (-nworst)
+    paths
+    to
+    any
+    single
+    endpoint
+    (default
+    1).
+    
+    In
+    case
+    of
+    group
+    based
+    mode
+    (when
+    timing_report_group_based_mode
+    is
+    set
+    to
+    true),
+    the
+    -max_paths
+    parameter
+    specifies
+    the
+    number
+    of
+    worst
+    paths
+    reported
+    per
+    clock
+    group.
+    
+    Default:
+    1
+    
+    "\fB-max_slack
+    <float>\fR"
+    Reports
+    only
+    those
+    paths
+    with
+    slack
+    less
+    than
+    the
+    value
+    of
+    the
+    float.
+    
+    The
+    -max_slack
+    option
+    limits
+    the
+    report
+    to
+    paths
+    that
+    fall
+    into
+    the
+    specified
+    range.
+    A
+    positive
+    slack
+    value
+    indicates
+    that
+    timing
+    was
+    met.
+    A
+    negative
+    value
+    for
+    slack
+    indicates
+    a
+    timing
+    violation.
+    
+    The
+    -max_slack
+    option
+    cannot
+    be
+    used
+    with
+    the
+    -unconstrained
+    option.
+    
+    "\fB-min_slack
+    <float>\fR"
+    Reports
+    only
+    those
+    paths
+    whose
+    slack
+    is
+    greater
+    than
+    the
+    value
+    of
+    float.
+    
+    The
+    -min_slack
+    option
+    cannot
+    be
+    used
+    with
+    the
+    -unconstrained
+    option.
+    
+    You
+    can
+    generate
+    a
+    timing
+    report
+    showing
+    paths
+    with
+    slack
+    greater
+    than
+    the
+    specified
+    slack
+    by
+    using
+    the
+    -max_paths
+    option.
+    For
+    example,
+    to
+    report
+    all
+    paths
+    with
+    slack
+    greater
+    than
+    2ns,
+    you
+    can
+    issue
+    the
+    following
+    command:
+    
+    min_slack
+    2.0
+    -max_paths
+    1000
+    
+    In
+    this
+    case
+    the
+    maximum
+    number
+    of
+    paths
+    reported
+    will
+    be
+    1000.
+    
+    When
+    the
+    -min_slack
+    parameter
+    is
+    specified,
+    the
+    total
+    numbers
+    of
+    paths
+    processed
+    will
+    be
+    as
+    determined
+    by
+    the
+    max_paths/nworst
+    settings
+    and
+    only
+    those
+    paths
+    satisfying
+    the
+    -min_slack
+    criteria
+    will
+    be
+    reported.
+    The
+    software
+    will
+    not
+    process
+    paths
+    beyond
+    the
+    max_paths/nworst
+    limit
+    to
+    find
+    other
+    paths
+    satisfying
+    the
+    -min_slack
+    limit.
+    
+    In
+    the
+    below
+    diagram,
+    if
+    -min_slack
+    is
+    0
+    and
+    -max_paths
+    4
+    -nworst
+    2
+    is
+    specified,
+    then
+    only
+    3
+    paths
+    will
+    be
+    reported;
+    path
+    with
+    slack
+    value
+    of
+    -1
+    will
+    be
+    ignored.
+    Here,
+    even
+    if
+    there
+    is
+    another
+    path
+    with
+    slack
+    that
+    is
+    greater
+    than
+    or
+    equal
+    to
+    2,
+    then
+    it
+    will
+    not
+    be
+    reported
+    because
+    worst
+    max_paths
+    have
+    been
+    processed.
+    
+    (<Image>
+    To
+    view
+    the
+    image,
+    refer
+    to
+    the
+    Innovus
+    Text
+    Command
+    Reference
+    -
+    Release
+    20.1
+    manual.)
+    
+    
+    "\fB-net\fR"
+    Adds
+    a
+    row
+    for
+    the
+    net
+    arc.
+    This
+    parameter
+    also
+    separates
+    the
+    cell
+    delay
+    from
+    the
+    wire
+    delay.
+    
+    Default:
+    The
+    net
+    arc
+    is
+    not
+    shown,
+    and
+    the
+    net
+    delay
+    is
+    added
+    to
+    the
+    following
+    delay.
+    
+    Note:
+    The
+    report_timing
+    -net
+    command
+    displays
+    the
+    net
+    delays
+    separate
+    from
+    the
+    cell
+    delays.
+    However,
+    the
+    net
+    delay
+    is
+    sometimes
+    shown
+    as
+    0.0.To
+    get
+    the
+    net
+    delays
+    to
+    show
+    up,
+    increase
+    the
+    report
+    precision
+    using
+    the
+    following
+    global:
+    
+    set_global
+    report_precision
+    5
+    
+    "\fB{-not_through | -not_rise_through | -not_fall_through}
+    <object_list>\fR"
+    -not_through:
+    Reports
+    paths
+    that
+    do
+    not
+    traverse
+    through
+    the
+    specified
+    nets,
+    ports,
+    or
+    pins
+    of
+    a
+    cell.
+    
+    By
+    default
+    the
+    parameter
+    will
+    be
+    ignored
+    when
+    an
+    object
+    has
+    already
+    been
+    specified.
+    In
+    this
+    case
+    the
+    parameter
+    shows
+    the
+    following
+    behavior:
+    .RS
+    
+    "*"
+    2
+    If
+    a
+    collection
+    of
+    all
+    the
+    input
+    ports
+    have
+    been
+    specified
+    (using
+    all_inputs
+    command),
+    then
+    the
+    report
+    will
+    show
+    paths
+    to
+    the
+    inout
+    part,
+    and
+    paths
+    starting
+    from
+    the
+    internal
+    part
+    of
+    inout
+    will
+    be
+    excluded.
+    .RE
+    .RS
+    
+    "*"
+    2
+    If
+    a
+    collection
+    of
+    all
+    output
+    ports
+    have
+    been
+    specified
+    (using
+    the
+    all_outputs
+    command)
+    then
+    the
+    report
+    will
+    show
+    paths
+    starting
+    from
+    the
+    internal
+    part
+    of
+    inout,
+    and
+    paths
+    ending
+    at
+    inout
+    part
+    will
+    be
+    excluded.
+    .RE
+    .RS
+    
+    "*"
+    2
+    If
+    any
+    other
+    collection
+    (not
+    specified
+    using
+    all_inputs
+    and
+    all_outputs
+    commands)
+    is
+    specified,
+    then
+    paths
+    to
+    both
+    the
+    parts
+    will
+    not
+    be
+    reported.
+    .RE
+    
+    -not_rise_through:
+    Excludes
+    paths
+    with
+    rise
+    transition.
+    -not_fall_through:
+    Excludes
+    paths
+    with
+    fall
+    transition.
+    
+    "\fB-nworst
+    <integer>\fR"
+    Specifies
+    the
+    maximum
+    number
+    of
+    paths
+    which
+    can
+    be
+    reported
+    for
+    a
+    particular
+    endpoint
+    (the
+    total
+    number
+    of
+    paths
+    reported
+    is
+    specified
+    by
+    the
+    -max_paths
+    parameter).
+    
+    In
+    case
+    of
+    group
+    based
+    mode
+    (when
+    timing_report_group_based_modeglobal
+    variableis
+    set
+    to
+    true),
+    the
+    -nworst
+    parameter
+    specifies
+    the
+    maximum
+    number
+    of
+    paths
+    for
+    a
+    particular
+    endpoint
+    per
+    clock
+    group.
+    
+    You
+    can
+    use
+    the
+    -nworst
+    option
+    to
+    report
+    all
+    the
+    checks
+    at
+    an
+    endpoint
+    or
+    use
+    the
+    -check_type
+    option
+    to
+    report
+    a
+    specific
+    check.
+    
+    Default:
+    1
+    
+    "\fB-path_exceptions
+    {applied | ignored | all}\fR"
+    Includes
+    information
+    of
+    path
+    exceptions
+    applied
+    and
+    considered
+    for
+    the
+    reported
+    path.
+    
+    If
+    multiple
+    from,
+    through,
+    or
+    to
+    pins
+    are
+    specfied,
+    the
+    exception
+    report
+    for
+    that
+    path
+    will
+    show
+    only
+    those
+    pins
+    that
+    are
+    part
+    of
+    the
+    current
+    path.
+    
+    Note:
+    You
+    cannot
+    use
+    this
+    parameter
+    with
+    the
+    following
+    report_timing
+    parameters:
+    .RS
+    
+    "*"
+    2
+    -point_to_point
+    .RE
+    .RS
+    
+    "*"
+    2
+    -collection
+    .RE
+    .RS
+    
+    "*"
+    2
+    -path_type
+    end
+    |
+    end_slack_only
+    |
+    summary
+    |
+    summary_slack_only
+    .RE
+    .RS
+    
+    "*"
+    2
+    -tcl_list
+    .RE
+    
+    
+    In
+    addition,
+    you
+    cannot
+    use
+    this
+    parameter
+    with
+    block-based
+    SSTA.
+    
+    Note:
+    If
+    a
+    path
+    is
+    already
+    unconstrained,
+    then
+    all
+    further
+    path
+    exceptions
+    applied
+    on
+    that
+    particular
+    path
+    will
+    be
+    reported
+    as
+    ignored
+    exceptions.
+    
+    The
+    -path_exception
+    parameter
+    also
+    reports
+    -start/-end
+    options
+    with
+    multi-cycle
+    paths.
+    Without
+    start
+    or
+    end
+    specification,
+    by
+    default,
+    the
+    setup
+    check
+    is
+    relative
+    to
+    the
+    end
+    clock
+    and
+    the
+    hold
+    check
+    is
+    relative
+    to
+    the
+    start
+    clock.
+    The
+    report_timing
+    -path_exception
+    all
+    command
+    will
+    report
+    all
+    the
+    non-default
+    -start/-end
+    specifications.
+    applied:
+    Reports
+    the
+    honored
+    exception
+    on
+    the
+    reported
+    path.
+    ignored:
+    Reports
+    the
+    ignored
+    exceptions
+    on
+    the
+    reported
+    path.
+    all:
+    Reports
+    both
+    applied
+    and
+    ignored
+    set
+    of
+    exceptions
+    on
+    the
+    reported.
+    
+    Note:
+    Analyzing
+    all
+    the
+    exceptions
+    for
+    a
+    path
+    will
+    cause
+    increase
+    in
+    runtime.
+    
+    "\fB-path_group
+    
+    <groupname_list>\fR"
+    Reports
+    only
+    paths
+    contained
+    in
+    the
+    groups
+    specified
+    in
+    groupname_list.
+    
+    Report
+    paths
+    belonging
+    to
+    the
+    default
+    path
+    group
+    by
+    using
+    -path_group
+    default.
+    The
+    paths
+    that
+    do
+    not
+    belong
+    to
+    any
+    user-specified
+    path
+    group
+    belong
+    to
+    the
+    default
+    path
+    group
+    named
+    default.
+    
+    In
+    group-based
+    mode,
+    the
+    internal
+    groups
+    -
+    clock
+    gating,
+    clock
+    names,
+    asynchronous
+    -
+    and
+    user
+    defined
+    path
+    groups
+    can
+    be
+    selected
+    using
+    the
+    -path_group
+    parameter.
+    
+    "\fB-path_type
+    {end | summary | full | full_clock | end_slack_only | summary_slack_only}\fR"
+    The
+    path_type
+    option
+    lets
+    you
+    choose
+    the
+    format
+    of
+    the
+    report
+    by
+    path
+    type.
+    The
+    default
+    format,
+    if
+    the
+    -path_type
+    option
+    is
+    not
+    specified
+    is
+    full.
+    
+    You
+    can
+    choose
+    one
+    of
+    the
+    following
+    options:
+    .RS
+    
+    "*"
+    2
+    end:
+    Generates
+    an
+    end
+    point
+    report
+    for
+    each
+    path
+    consisting
+    of
+    an
+    endpoint,
+    cause,
+    slack,
+    arrival
+    time,
+    required
+    time,
+    and
+    phase.
+    This
+    option
+    generates
+    a
+    very
+    fast
+    report.
+    The
+    -format
+    option
+    does
+    not
+    have
+    any
+    impact
+    on
+    this
+    report
+    format.
+    
+    "*"
+    2
+    summary:
+    Generates
+    a
+    summary
+    report
+    for
+    each
+    path
+    consisting
+    of
+    a
+    start
+    point,
+    endpoint,
+    cause,
+    slack,
+    arrival
+    time,
+    required
+    time,
+    and
+    phase.
+    The
+    -format
+    option
+    does
+    not
+    have
+    any
+    impact
+    on
+    this
+    report
+    format.
+    
+    "*"
+    2
+    full:
+    Generates
+    a
+    report
+    that
+    displays
+    the
+    full
+    path
+    with
+    accompanying
+    required
+    time
+    and
+    slack
+    calculation.
+    This
+    is
+    the
+    default
+    path
+    type.
+    Control
+    the
+    report
+    format
+    using
+    the
+    -format
+    option.
+    
+    "*"
+    2
+    full_clock:
+    If
+    the
+    path
+    reported
+    ends
+    at
+    a
+    timing
+    check,
+    this
+    option
+    also
+    reports
+    the
+    full
+    clock
+    path
+    (Other
+    End
+    Path)
+    in
+    addition
+    to
+    the
+    full
+    data
+    path
+    (Timing
+    Path).
+    
+    "*"
+    2
+    end_slack_only:
+    Generates
+    an
+    end
+    point
+    report,
+    similar
+    to
+    -path_type
+    end
+    report,
+    for
+    each
+    path
+    consisting
+    of
+    an
+    endpoint,
+    slack
+    and
+    cause
+    (as
+    Violated/Met).
+    This
+    option
+    generates
+    a
+    very
+    fast
+    report.
+    The
+    -format
+    option
+    does
+    not
+    have
+    any
+    impact
+    on
+    this
+    report
+    format.
+    
+    Note:
+    When
+    the
+    -path_typeend_slack_only
+    option
+    is
+    used,
+    the
+    path
+    collections
+    will
+    not
+    be
+    reported.
+    
+    "*"
+    2
+    summary_slack_only:
+    Generates
+    a
+    summary
+    report,
+    similar
+    to
+    -path_typesummary,
+    for
+    each
+    path
+    consisting
+    of
+    a
+    start
+    point,
+    endpoint,
+    slack
+    and
+    cause
+    (as
+    Violated/Met).
+    The
+    -format
+    parameter
+    does
+    not
+    have
+    any
+    impact
+    on
+    this
+    report
+    format.
+    .RE
+    
+    
+    In
+    MMMC
+    mode,
+    when
+    you
+    specify
+    the
+    report_timing
+    -path_type
+    parameter
+    (with
+    end,
+    end_slack_only,
+    summary,
+    or
+    summary_slack_only
+    options),
+    the
+    output
+    report
+    displays
+    a
+    view
+    column
+    for
+    all
+    the
+    reported
+    paths.
+    
+    Note:
+    The
+    paths
+    contained
+    in
+    a
+    collection
+    are
+    not
+    reported
+    with
+    upgraded
+    path
+    type.
+    
+    "\fB-point_to_point\fR"
+    Traces
+    the
+    worst
+    delay
+    path
+    between
+    a
+    pair
+    of
+    from-to
+    pins.
+    Paths
+    reported
+    with
+    this
+    parameter
+    only
+    include
+    the
+    cumulative
+    delay
+    of
+    the
+    path.
+    
+    You
+    must
+    specify
+    either
+    the
+    -from
+    or
+    -to
+    parameter,
+    to
+    define
+    the
+    begin
+    and
+    end
+    points
+    of
+    the
+    path.
+    
+    If
+    you
+    do
+    not
+    specify
+    a
+    -from
+    pin,
+    the
+    standard
+    definition
+    of
+    the
+    begin
+    point
+    of
+    a
+    path
+    applies.
+    If
+    you
+    specify
+    a
+    -from
+    pin,
+    it
+    is
+    treated
+    as
+    the
+    begin
+    point
+    of
+    the
+    path.
+    If
+    you
+    specify
+    a
+    -from
+    pin
+    that
+    is
+    not
+    a
+    valid
+    begin
+    point,
+    the
+    arrival
+    time
+    of
+    the
+    first
+    pin
+    starts
+    from
+    0.
+    
+    If
+    you
+    do
+    not
+    specify
+    a
+    -to
+    pin,
+    the
+    standard
+    definition
+    of
+    the
+    end
+    point
+    applies.
+    If
+    you
+    specify
+    a
+    -to
+    pin,
+    it
+    is
+    treated
+    as
+    the
+    end
+    point,
+    and
+    only
+    those
+    paths
+    ending
+    in
+    -to
+    pins
+    are
+    reported.
+    If
+    you
+    specify
+    more
+    than
+    one
+    -to
+    pin,
+    the
+    worst
+    path
+    to
+    each
+    pin-to-pin
+    is
+    reported.
+    
+    When
+    from-to
+    pins
+    are
+    specified,
+    the
+    software
+    will
+    trace
+    across
+    the
+    trigger
+    arcs
+    and
+    report
+    a
+    path,
+    if
+    there
+    is
+    a
+    clock
+    reaching
+    the
+    CK
+    pin
+    of
+    the
+    trigger
+    arc.
+    However,
+    if
+    there
+    is
+    a
+    begin
+    or
+    end
+    point
+    present
+    between
+    the
+    -from
+    and
+    -to
+    pins,
+    the
+    software
+    will
+    not
+    trace
+    beyond
+    it.
+    
+    If
+    there
+    is
+    no
+    clock
+    reaching
+    the
+    CK
+    pin
+    of
+    the
+    trigger
+    arc,
+    the
+    software
+    cannot
+    trace
+    across
+    the
+    trigger
+    arc,
+    and
+    no
+    path
+    is
+    reported.
+    Additionally,
+    clock
+    path
+    delay
+    is
+    included
+    only
+    when
+    the
+    clock
+    is
+    in
+    propagated
+    mode.
+    
+    The
+    -point_to_point
+    parameter
+    can
+    be
+    used
+    with
+    the
+    -max_paths
+    and
+    -nworst
+    parameters.
+    
+    Note:
+    The
+    -point_to_point
+    and
+    -through
+    parameters
+    are
+    mutually
+    exclusive;
+    you
+    cannot
+    specify
+    them
+    together.
+    
+    Note:
+    The
+    -point_to_point
+    parameter
+    supports
+    a
+    single
+    -from
+    and-to
+    pin;
+    a
+    list
+    of
+    pins
+    is
+    not
+    supported.
+    
+    See
+    TableOptionsSample
+    Reports.
+    
+    "\fB-retime_format
+    {manual | retime_compare | retime_replace}\fR"
+    Allows
+    you
+    to
+    set
+    the
+    format
+    of
+    timing
+    reports
+    for
+    retime
+    related
+    fields.
+    You
+    can
+    specify
+    one
+    of
+    the
+    following
+    options:
+    .RS
+    
+    "*"
+    2
+    manual:
+    Does
+    not
+    change
+    the
+    report_timing
+    format.
+    
+    "*"
+    2
+    retime_compare:
+    If
+    GBA
+    columns
+    are
+    present
+    in
+    the
+    report
+    format,
+    then
+    the
+    corresponding
+    retime
+    options
+    are
+    added.
+    If
+    PBA
+    columns
+    are
+    already
+    present,
+    then
+    there
+    is
+    no
+    change
+    in
+    the
+    format.
+    
+    "*"
+    2
+    retime_replace:
+    If
+    GBA
+    columns
+    are
+    present
+    in
+    the
+    report
+    format,
+    then
+    the
+    GBA
+    columns
+    are
+    replaced
+    by
+    the
+    corresponding
+    PBA
+    columns.
+    If
+    PBA
+    columns
+    are
+    already
+    in
+    the
+    report,
+    then
+    there
+    is
+    no
+    change
+    in
+    the
+    format.
+    .RE
+    
+    
+    Note:
+    The
+    timing
+    report
+    format
+    is
+    also
+    controlled
+    using
+    the
+    timing_report_retime_formatting_mode
+    global
+    variable.
+    The
+    report_timing
+    command
+    setting
+    has
+    precedence
+    over
+    this
+    global
+    variable.
+    
+    "\fB-retime_mode
+    {path | exhaustive}\fR"
+    Enables
+    exhaustive
+    path-based
+    analysis
+    mode.
+    In
+    this
+    mode,
+    the
+    software
+    will
+    exhaustively
+    examine
+    nworst
+    paths
+    of
+    the
+    selected
+    endpoints
+    and
+    then
+    select
+    the
+    true
+    worst
+    path
+    to
+    be
+    reported
+    -
+    based
+    on
+    retimed
+    slacks
+    of
+    all
+    the
+    examined
+    paths.
+    
+    
+    When
+    you
+    use
+    this
+    option,
+    reporting
+    can
+    be
+    runtime
+    intensive
+    as
+    the
+    software
+    needs
+    to
+    do
+    an
+    exhaustive
+    search
+    for
+    true
+    worst
+    paths.
+    Therefore,
+    it
+    is
+    recommended
+    to
+    use
+    this
+    option
+    in
+    the
+    later
+    phases
+    of
+    sign-off
+    stage
+    when
+    there
+    are
+    very
+    few
+    violations
+    left
+    for
+    analysis.
+    
+    "\fB-retime
+    {aocv | |path_slew_propagation | aocv_path_slew_propagation}\fR"
+    Reanalyzes
+    the
+    specified
+    set
+    of
+    paths
+    using
+    the
+    specified
+    method.
+    
+    Note:
+    This
+    feature
+    is
+    not
+    meant
+    to
+    be
+    run
+    on
+    all
+    the
+    paths
+    of
+    a
+    design.
+    aocv:
+    Computes
+    AOCV
+    stage
+    count
+    based
+    on
+    specific
+    paths
+    and
+    applies
+    the
+    AOCV
+    derate
+    values
+    to
+    GBA
+    (
+    graph-based
+    analysis)
+    
+    delays.
+    
+    The
+    -retime
+    aocv
+    option
+    can
+    be
+    used
+    with
+    the
+    following
+    parameters
+    only:
+    .RS
+    
+    "*"
+    2
+    -clock_from
+    .RE
+    .RS
+    
+    "*"
+    2
+    -edge_from
+    .RE
+    .RS
+    
+    "*"
+    2
+    -clock_to
+    .RE
+    .RS
+    
+    "*"
+    2
+    -edge_to
+    .RE
+    .RS
+    
+    "*"
+    2
+    -rise/-fall
+    .RE
+    .RS
+    
+    "*"
+    2
+    -early/-late
+    .RE
+    .RS
+    
+    "*"
+    2
+    -check_type
+    .RE
+    .RS
+    
+    "*"
+    2
+    -max_paths
+    .RE
+    .RS
+    
+    "*"
+    2
+    -begin_end_pair
+    .RE
+    .RS
+    
+    "*"
+    2
+    -from/-from_rise/-from_fall
+    .RE
+    .RS
+    
+    "*"
+    2
+    -through/-through_rise/-through_fall
+    .RE
+    .RS
+    
+    "*"
+    2
+    -to/-to_rise/-to_fall
+    .RE
+    
+    
+    "*"
+    2
+    -path_group
+    .RS
+    
+    "*"
+    2
+    -path_exceptions
+    .RE
+    .RS
+    
+    "*"
+    2
+    -net
+    .RE
+    .RS
+    
+    "*"
+    2
+    -path_type
+    .RE
+    .RS
+    
+    "*"
+    2
+    -max_slack
+    .RE
+    .RS
+    
+    "*"
+    2
+    -min_slack
+    .RE
+    .RS
+    
+    "*"
+    2
+    -view
+    .RE
+    .RS
+    
+    "*"
+    2
+    -format
+    <column_list>
+    .RE
+    .RS
+    
+    "*"
+    2
+    -derate_summary
+    .RE
+    .RS
+    
+    "*"
+    2
+    -machine_readable
+    .RE
+    .RS
+    
+    "*"
+    2
+    -nworst
+    .RE
+    
+    
+    path_slew_propagation:
+    Re-evaluates
+    the
+    given
+    set
+    of
+    graph-based
+    analysis
+    (GBA)
+    paths
+    by
+    recalculating
+    the
+    delay
+    values
+    based
+    upon
+    actual
+    propagated
+    slew
+    across
+    the
+    path.
+    In
+    this
+    case
+    the
+    AOCV
+    derates
+    are
+    the
+    ones
+    that
+    are
+    reported
+    during
+    graph-based
+    analysis.
+    
+    The
+    default
+    timing
+    analysis
+    uses
+    worst-case
+    slew
+    propagation
+    to
+    calculate
+    the
+    delays
+    at
+    each
+    stage.
+    As
+    a
+    result,
+    timing
+    analysis
+    results
+    can
+    be
+    pessimistic.
+    
+    Note:
+    This
+    feature
+    should
+    be
+    run
+    only
+    on
+    paths
+    that
+    are
+    not
+    meeting
+    the
+    slack
+    margin
+    criteria,
+    to
+    help
+    identify
+    actual
+    failing
+    paths
+    from
+    those
+    that
+    are
+    simply
+    failing
+    due
+    to
+    the
+    conservative
+    delay
+    calculation.
+    
+    Signal
+    integrity
+    incremental
+    delays
+    can
+    be
+    recomputed
+    for
+    the
+    entire
+    path.
+    You
+    can
+    use
+    the
+    following
+    command
+    to
+    perform
+    path
+    based
+    signal
+    integrity
+    analysis:
+    
+    report_timing
+    -retime
+    path_slew_propagation
+    
+    In
+    the
+    report_timing
+    command
+    output,
+    the
+    Retime
+    Incr
+    Delay
+    column
+    reports
+    recomputed
+    signal
+    integrity
+    delays.
+    To
+    view
+    this
+    column,
+    specify
+    the
+    report_timing
+    -format
+    retime_incr_delay
+    option
+    or
+    use
+    set_global
+    report_timing_format
+    timing
+    global
+    variable.
+    
+    The
+    -retime
+    option
+    also
+    supports
+    retiming
+    a
+    collection
+    of
+    paths.
+    This
+    option
+    does
+    not
+    retiming
+    an
+    already
+    retimed
+    path
+    collection.
+    This
+    feature
+    works
+    in
+    graph-based
+    analysis
+    (GBA)
+    mode
+    for
+    path
+    collections.
+    You
+    can
+    use
+    the
+    following
+    use
+    model
+    to
+    retime
+    collections:
+    
+    report_timing
+    $collection
+    -retime
+    path_slew_propagation
+    
+    A
+    path
+    collection
+    stores
+    context
+    dependent
+    data,
+    that
+    is,
+    a
+    delay
+    property
+    in
+    GBA
+    will
+    reflect
+    delay
+    data
+    of
+    the
+    timing
+    path
+    report
+    generated
+    in
+    GBA
+    mode.
+    The
+    same
+    property
+    in
+    PBA
+    will
+    reflect
+    the
+    re-time
+    delay
+    data
+    of
+    the
+    timing
+    path
+    report
+    in
+    PBA
+    mode.
+    
+    The
+    delay
+    column
+    in
+    timing
+    reports
+    is
+    also
+    context
+    dependent
+    -
+    under
+    the
+    timing_report_retime_formatting_mode
+    retime_replace
+    global
+    variable.
+    
+    Note:
+    For
+    memory
+    optimization
+    purposes,
+    both
+    the
+    delays
+    will
+    not
+    be
+    stored
+    in
+    the
+    same
+    path
+    collection.
+    You
+    can
+    use
+    this
+    setting
+    for
+    comparison
+    purposes.
+    aocv_path_slew_propagation:
+    Re-evaluates
+    the
+    given
+    set
+    of
+    graph-based
+    analysis
+    (GBA)
+    paths
+    by
+    using
+    path-based
+    AOCV
+    derates
+    and
+    delays
+    using
+    actual
+    path-
+    based
+    propagated
+    slew.
+    This
+    option
+    is
+    a
+    combination
+    of
+    -aocv
+    and
+    -path_slew_propagation.
+    
+    "\fB-skip_io_paths\fR"
+    Specifies
+    whether
+    the
+    input/output
+    paths
+    are
+    to
+    be
+    ignored.
+    
+    "\fB-rise
+    |
+    -fall\fR"
+    Reports
+    the
+    path
+    with
+    the
+    specified
+    edge
+    on
+    the
+    endpoint.
+    
+    If
+    an
+    endpoint
+    is
+    specified
+    using
+    -to_rise
+    (or
+    -to_fall)
+    option,
+    the
+    -rise
+    (or
+    -fall)
+    option
+    is
+    ignored
+    and
+    paths
+    with
+    edge
+    specified
+    by
+    -to_rise
+    (or
+    -to_fall)
+    are
+    reported.
+    The
+    
+    -rise
+    option
+    applies
+    to
+    end
+    point
+    only.
+    
+    "\fB-tcl_list\fR"
+    Produces
+    the
+    report
+    in
+    Tcl
+    list
+    format
+    instead
+    of
+    a
+    tabular
+    format.
+    This
+    is
+    useful
+    for
+    integrating
+    timing
+    with
+    custom
+    Tcl
+    functions,
+    and
+    also
+    for
+    customizing
+    report
+    generation.
+    
+    The
+    -tcl_list
+    and
+    filename
+    parameters
+    are
+    mutually
+    exclusive;
+    you
+    cannot
+    specify
+    them
+    together.
+    
+    "\fB{-through | -through_rise | -through_fall}
+    <pin_list>\fR"
+    Reports
+    paths
+    that
+    pass
+    through
+    pin(s)
+    or
+    net(s)
+    specified
+    by
+    the
+    pin_list.
+    Any
+    number
+    of
+    -through
+    pins
+    or
+    nets
+    can
+    be
+    specified.
+    Using
+    -through_rise
+    (or
+    -through_fall)
+    specifies
+    that
+    the
+    paths
+    go
+    through
+    the
+    rising
+    (or
+    falling)
+    edge
+    of
+    the
+    signals
+    on
+    the
+    pins/nets
+    in
+    pin_list.
+    
+    The
+    pin_list
+    is
+    a
+    logical
+    OR
+    function.
+    The
+    resulting
+    path
+    may
+    pass
+    through
+    any
+    of
+    the
+    pins
+    or
+    nets
+    in
+    the
+    -through
+    pin_list.
+    To
+    force
+    the
+    report
+    to
+    pass
+    through
+    multiple
+    pins
+    or
+    nets,
+    separate
+    -through
+    statements
+    are
+    needed.
+    
+    You
+    can
+    use
+    these
+    parameters
+    with
+    the
+    
+    -net
+    
+    option.
+    
+    "\fB-to
+    |
+    -to_rise
+    |
+    -to_fall
+    <pin_list>\fR"
+    Reports
+    paths
+    leading
+    to
+    the
+    pin(s)
+    specified
+    by
+    the
+    pin_list.
+    Pins
+    in
+    the
+    pin_list
+    can
+    be
+    either
+    pins
+    on
+    the
+    design
+    boundary
+    (ports)
+    or
+    pins
+    on
+    an
+    instance.
+    Only
+    one
+    list
+    of
+    -to
+    pins
+    can
+    be
+    specified
+    per
+    report.
+    Using
+    -to_rise
+    (or
+    -to_fall)
+    specifies
+    that
+    the
+    rising
+    (or
+    falling)
+    edge
+    of
+    the
+    signals
+    on
+    the
+    pins
+    in
+    pin_list
+    are
+    at
+    the
+    end
+    of
+    the
+    paths.
+    
+    The
+    -to_rise
+    option
+    applies
+    to
+    end
+    point
+    as
+    well
+    as
+    intermediate
+    pins.
+    
+    "\fB-unconstrained\fR"
+    Reports
+    only
+    the
+    unconstrained
+    paths
+    (paths
+    with
+    no
+    slack).
+    Each
+    signal
+    arriving
+    at
+    the
+    path
+    end
+    node
+    which
+    does
+    not
+    have
+    a
+    matching
+    required
+    time,
+    results
+    in
+    an
+    unconstrained
+    path.
+    
+    The
+    report_timing
+    command
+    without
+    the
+    -unconstrained
+    parameter
+    reports
+    only
+    constrained
+    paths.
+    If
+    no
+    constrained
+    path
+    is
+    found,
+    there
+    may
+    be
+    unconstrained
+    paths
+    or
+    the
+    path
+    may
+    not
+    exist.
+    
+    Note:
+    The
+    -min_slack
+    and
+    -max_slack
+    cannot
+    be
+    specified
+    with
+    the
+    -unconstrained
+    parameter.
+    
+    See
+    SampleReportsSample
+    Reports
+    for
+    the
+    conditions
+    under
+    which
+    a
+    path
+    is
+    reported
+    as
+    constrained
+    or
+    unconstrained.
+    
+    "\fB-unique_pins\fR"
+    Reports
+    paths
+    through
+    unique
+    set
+    of
+    pins.
+    
+    When
+    this
+    parameter
+    is
+    specified,
+    in
+    group-based
+    mode
+    for
+    a
+    given
+    begin-end
+    point
+    pair,
+    the
+    software
+    will
+    consider
+    all
+    different
+    launch
+    clock
+    paths
+    for
+    reporting
+    unique
+    paths.
+    If
+    for
+    a
+    given
+    begin-end
+    pair
+    and
+    a
+    given
+    capture
+    clock,
+    there
+    is
+    a
+    possibility
+    of
+    different
+    launch
+    clock
+    paths,
+    then
+    each
+    such
+    path
+    will
+    be
+    reported.
+    
+    Note:
+    Using
+    this
+    option
+    may
+    significantly
+    affect
+    runtime
+    and
+    memory
+    usage
+    if
+    the
+    number
+    of
+    paths
+    to
+    be
+    reported
+    is
+    high.
+    
+    "\fB-view
+    {<viewName>}\fR"
+    Generates
+    report
+    for
+    the
+    specified
+    analysis
+    view.
+    
+    You
+    must
+    be
+    in
+    multi-mode
+    multi-corner
+    analysis
+    mode
+    in
+    order
+    to
+    use
+    this
+    parameter.
+    To
+    create
+    a
+    view,
+    you
+    use
+    the
+    create_analysis_view
+    command.
+    To
+    set
+    an
+    active
+    view
+    for
+    analysis,
+    you
+    use
+    the
+    set_analysis_view
+    command.
+    
+    Default:
+    Reports
+    the
+    worst
+    path
+    to
+    each
+    endpoint
+    across
+    all
+    analysis
+    views.
+    
+    The
+    report_timing
+    command
+    to
+    performs
+    block
+    based
+    analysis
+    in
+    MMMC
+    mode.
+    By
+    default,
+    the
+    command
+    reports
+    the
+    worst
+    end-point(s)
+    across
+    all
+    views.
+    You
+    can
+    use
+    the
+    -view
+    parameter
+    to
+    report
+    for
+    individual
+    views.
+    
+    "\fB-worst_rc_corner\fR"
+    Identifies
+    worst
+    interconnect
+    parameter
+    combination
+    that
+    leads
+    to
+    minimum
+    slack
+    (desired)
+    and
+    generates
+    a
+    report
+    for
+    the
+    corner.
+    .P
+    Report
+    Timing-
+    Column
+    List
+    Options
+    
+    
+    
+    "\fBOption\fR"
+    Description
+    
+    "\fBadjustment\fR"
+    Reports
+    generated
+    clock
+    adjustment
+    values.
+    When
+    reporting
+    the
+    detailed
+    path
+    for
+    a
+    generated
+    clock,
+    there
+    are
+    circumstances
+    where
+    the
+    arrival
+    time
+    needs
+    to
+    be
+    adjusted
+    when
+    a
+    create_generated_clock
+    assertion
+    is
+    encountered
+    along
+    the
+    path.
+    The
+    adjustment
+    argument
+    can
+    be
+    used
+    to
+    provide
+    a
+    clearer
+    indication
+    of
+    why
+    a
+    "jump"
+    in
+    the
+    arrival
+    time
+    is
+    seen
+    in
+    the
+    path
+    report.
+    
+    When
+    the
+    create_generated_clock
+    -edge_shift
+    parameter
+    is
+    specified,
+    the
+    adjustment
+    column
+    will
+    show
+    the
+    amount
+    of
+    shift
+    specified.
+    
+    "\fB
+    abs_delay_err
+    \fR"
+    Reports
+    the
+    absolute
+    delay
+    difference
+    of
+    Tempus
+    from
+    Spice.
+    
+    "\fB
+    abs_slew_err
+    \fR"
+    Reports
+    the
+    absolute
+    slew
+    difference
+    of
+    Tempus
+    from
+    Spice.
+    
+    "\fBannotation\fR"
+    Reports
+    RC
+    parasitic
+    annotations
+    for
+    net
+    arcs,
+    and
+    delay
+    annotations
+    for
+    either
+    gate
+    or
+    net
+    arcs.
+    The
+    following
+    annotations
+    are
+    reported:
+    .RS
+    
+    "*"
+    2
+    SDF:
+    SDF
+    back-annotation.
+    The
+    annotation
+    status
+    reflects
+    the
+    gate
+    arc,
+    not
+    the
+    interconnect
+    arc.
+    
+    "*"
+    2
+    SPEF:
+    This
+    entry
+    appears
+    if
+    parasitic
+    extraction
+    has
+    been
+    done
+    or
+    annotated
+    using
+    SPEF.
+    
+    "*"
+    2
+    LumpedRC:
+    Lumped
+    RC
+    annotation
+    
+    "*"
+    2
+    DlyAssert:
+    Assertion
+    set
+    with
+    set_annotated_delay
+    command
+    
+    "*"
+    2
+    WLM:
+    Wire
+    load
+    model
+    back-annotation
+    
+    "*"
+    2
+    <none>:
+    All
+    others
+    .RE
+    
+    
+    "\fB
+    aocv_adj_stages
+    \fR"
+    Shows
+    up
+    "Aocv
+    Adjust
+    Stages"
+    column.
+    This
+    column
+    reports
+    the
+    AOCV
+    adjustment
+    stages
+    that
+    indicate
+    the
+    total
+    effective
+    stage
+    count.
+    
+    
+    "\fBaocv_derate\fR"
+    Reports
+    the
+    graph-based
+    AOCV
+    derating
+    factor
+    used
+    for
+    cells/nets
+    in
+    AOCV
+    mode.
+    In
+    retime
+    mode,
+    this
+    column
+    will
+    report
+    graph-based
+    derating
+    for
+    cells/nets
+    before
+    the
+    AOCV
+    branch
+    point
+    and
+    path-based
+    derating.
+    
+    "\fB
+    aocv_weight
+    \fR"
+    Reports
+    AOCV
+    weight
+    values
+    for
+    the
+    path
+    elements.
+    
+    
+    "\fBarc\fR"
+    Reports
+    the
+    arc
+    as
+    described
+    by
+    the
+    from
+    pin,
+    from
+    pin
+    edge,
+    to
+    pin,
+    and
+    to
+    pin
+    edge.
+    For
+    example,
+    the
+    arc
+    from
+    the
+    rising
+    edge
+    of
+    pin
+    A
+    to
+    the
+    falling
+    edge
+    of
+    pin
+    Z
+    is
+    reported
+    as
+    A
+    ->
+    Z.
+    
+    "\fBarrival\fR"
+    Reports
+    the
+    arrival
+    time
+    on
+    the
+    pin.
+    
+    "\fB
+    arrival_mean
+    \fR"
+    Reports
+    mean
+    of
+    the
+    arrival
+    time
+    on
+    a
+    pin.
+    
+    
+    "\fB
+    arrival_sigma
+    \fR"
+    Reports
+    standard
+    deviation
+    of
+    the
+    arrival
+    time
+    on
+    a
+    pin.
+    
+    
+    "\fBcell\fR"
+    Reports
+    the
+    cell
+    name
+    of
+    the
+    given
+    pin's
+    instance.
+    
+    "\fBdelay\fR"
+    Reports
+    the
+    arc
+    delay.
+    If
+    the
+    stolen
+    slack
+    at
+    the
+    arc
+    output
+    pin
+    (output
+    of
+    transparent
+    latches)
+    is
+    not
+    zero,
+    the
+    stolen
+    column
+    is
+    also
+    displayed
+    along
+    with
+    this
+    column.
+    
+    "\fB
+    delay_mean
+    \fR"
+    Reports
+    the
+    mean
+    of
+    each
+    arc's
+    delay.
+    
+    
+    "\fB
+    delay_sigma
+    
+    \fR"
+    Reports
+    the
+    standard
+    deviation
+    of
+    each
+    arc's
+    delay.
+    
+    Note:
+    In
+    the
+    absence
+    of
+    correlated
+    and
+    uncorrelated
+    components
+    of
+    variation,
+    the
+    individual
+    delay
+    sigma
+    values
+    will
+    not
+    be
+    summed
+    up.
+    
+    "\fBdirection\fR"
+    Reports
+    the
+    pin
+    direction
+    (IN,
+    OUT).
+    
+    "\fBedge\fR"
+    Reports
+    the
+    edge
+    of
+    a
+    pin
+    (^=R,
+    v=F).
+    
+    "\fBfanin\fR"
+    Reports
+    the
+    number
+    of
+    source
+    nodes
+    of
+    a
+    net
+    connected
+    to
+    a
+    timing
+    pin.
+    
+    "\fBfanout\fR"
+    Reports
+    the
+    number
+    of
+    sinks
+    of
+    a
+    net
+    connected
+    to
+    a
+    timing
+    pin.
+    
+    "\fB
+    flags
+    \fR"
+    Indicates
+    the
+    size_only,
+    dont_use,
+    dont_touch,
+    and
+    ideal
+    attributes.
+    
+    
+    "\fBhpin\fR"
+    Reports
+    the
+    hierarchical
+    name
+    for
+    a
+    given
+    pin.
+    
+    Note:
+    The
+    hpin,
+    pin,
+    and
+    timing_point
+    will
+    print
+    the
+    same
+    values
+    in
+    the
+    report
+    output.
+    
+    "\fBincr_delay\fR"
+    Reports
+    the
+    incremental
+    delay
+    of
+    a
+    pertaining
+    arc.
+    The
+    software
+    reads
+    the
+    incremental
+    delay
+    from
+    an
+    incremental
+    SDF
+    file
+    using
+    the
+    read_sdf
+    command.
+    
+    "\fBinstance\fR"
+    Reports
+    the
+    hierarchical
+    name
+    of
+    a
+    given
+    pin's
+    instance.
+    
+    "\fBinstance_location\fR"
+    Reports
+    the
+    location
+    (x,y)
+    of
+    an
+    instance.
+    If
+    a
+    design
+    is
+    not
+    placed,
+    this
+    column
+    will
+    be
+    blank.
+    This
+    option
+    displays
+    the
+    instance
+    column
+    automatically.
+    
+    "\fB
+    latch_window
+    \fR"
+    Reports
+    the
+    available
+    window
+    for
+    latch
+    to
+    sample
+    the
+    data.
+    
+    
+    "\fBload\fR"
+    Reports
+    the
+    total
+    capacitance
+    load
+    on
+    a
+    given
+    pin.
+    
+    "\fB
+    module
+    \fR"
+    Reports
+    the
+    module
+    name
+    of
+    the
+    corresponding
+    block
+    hierarchy.
+    This
+    hierarchical
+    module
+    name
+    will
+    be
+    reported
+    only
+    when
+    the
+    -hpin
+    parameter
+    of
+    the
+    report_timing
+    command
+    is
+    specified.
+    
+    "\fBnet\fR"
+    Reports
+    the
+    hierarchical
+    name
+    of
+    a
+    net
+    connected
+    to
+    a
+    given
+    pin.
+    
+    "\fB
+    pct_delay_err
+    \fR"
+    Reports
+    the
+    percent
+    delay
+    difference
+    of
+    Tempus
+    from
+    Spice.
+    
+    "\fB
+    pct_slew_err
+    \fR"
+    Reports
+    the
+    percent
+    slew
+    difference
+    of
+    Tempus
+    from
+    Spice.
+    
+    "\fBphase\fR"
+    Reports
+    the
+    phase
+    name
+    of
+    a
+    pin.
+    
+    "\fB
+    phys_info
+    
+    \fR"
+    Shows
+    minimum/maximum
+    assigned
+    layer,
+    and
+    non-default
+    rule
+    name
+    information.
+    
+    
+    "\fBpin\fR"
+    Reports
+    the
+    reference
+    name
+    for
+    the
+    given
+    pin.
+    
+    "\fBpin_load\fR"
+    Reports
+    the
+    pin
+    load
+    data.
+    The
+    pin
+    load
+    refers
+    to
+    the
+    sum
+    of
+    pin
+    capacitance
+    of
+    all
+    the
+    pins
+    connected
+    to
+    the
+    current
+    net.
+    
+    
+    "\fBpin_location\fR"
+    Reports
+    the
+    location
+    (x,y)
+    of
+    a
+    pin.
+    If
+    a
+    design
+    is
+    not
+    placed,
+    this
+    column
+    will
+    be
+    blank.
+    
+    "\fBpower_domain\fR"
+    Reports
+    power
+    domain
+    details
+    of
+    the
+    specified
+    path
+    instance.
+    
+    "\fBrequired\fR"
+    Reports
+    the
+    required
+    time
+    on
+    a
+    pin.
+    
+    "\fBretime_delay\fR"
+    Reports
+    the
+    recalculated
+    arc
+    delay
+    based
+    on
+    the
+    path
+    being
+    reanalyzed
+    with
+    the
+    specified
+    retime
+    method.
+    
+    "\fB
+    retime_delay_mean
+    \fR"
+    Reports
+    the
+    mean
+    of
+    the
+    recalculated
+    arc
+    delay
+    on
+    the
+    path
+    being
+    reanalyzed
+    with
+    the
+    specified
+    retime
+    method.
+    
+    "\fBretime_delay_sigma\fR"
+    Reports
+    the
+    standard
+    deviation
+    of
+    each
+    parameter
+    of
+    an
+    arc's
+    retimed
+    delay.
+    
+    "\fBretime_slew\fR"
+    Reports
+    the
+    recalculated
+    slew
+    based
+    on
+    the
+    path
+    being
+    reanalyzed
+    with
+    the
+    specified
+    retime
+    method.
+    
+    "\fB
+    retime_slew_mean
+    \fR"
+    Reports
+    the
+    mean
+    of
+    each
+    parameter
+    of
+    an
+    arc
+    sink
+    pin's
+    retimed
+    slew.
+    
+    "\fBretime_slew_sigma\fR"
+    Reports
+    the
+    standard
+    deviation
+    of
+    each
+    parameter
+    of
+    an
+    arc
+    sink
+    pin's
+    retimed
+    slew.
+    
+    "\fBstage_count\fR"
+    Displays
+    the
+    aggregate
+    stage
+    count
+    of
+    a
+    specific
+    instance
+    in
+    graph-based
+    analysis
+    (GBA)
+    mode,
+    and
+    the
+    actual
+    stage
+    count
+    in
+    path-based
+    analysis
+    (PBA)
+    mode.
+    
+    "\fB
+    slew
+    \fR"
+    Reports
+    the
+    propagated
+    slew
+    at
+    the
+    given
+    pin.
+    
+    "\fB
+    slew_mean
+    \fR"
+    Reports
+    mean
+    of
+    each
+    parameter
+    of
+    an
+    arc
+    sink
+    pin's
+    slew.
+    
+    
+    "\fB
+    slew_sigma
+    \fR"
+    Reports
+    the
+    standard
+    deviation
+    of
+    each
+    parameter
+    of
+    an
+    arc
+    sink
+    pin's
+    slew.
+    
+    
+    "\fB
+    socv_derate
+    \fR"
+    Reports
+    the
+    SOCV
+    or
+    the
+    spatial
+    derating
+    factor
+    applied
+    on
+    the
+    cells
+    or
+    nets
+    in
+    SOCV
+    analysis
+    mode.
+    
+    "\fB
+    spice_arrival
+    \fR"
+    Reports
+    the
+    Spice
+    arrival
+    time
+    at
+    the
+    timing
+    point.
+    
+    "\fB
+    spice_delay
+    \fR"
+    Reports
+    the
+    Spice
+    delay
+    of
+    a
+    timing
+    arc.
+    
+    "\fB
+    spice_slew
+    \fR"
+    Reports
+    the
+    Spice
+    slew
+    of
+    a
+    timing
+    point.
+    
+    "\fBstolen\fR"
+    Reports
+    the
+    slack
+    stolen
+    (or
+    the
+    time
+    given
+    to
+    the
+    previous
+    stage)
+    at
+    the
+    given
+    pin.
+    If
+    the
+    slack
+    is
+    not
+    zero
+    and
+    the
+    delay
+    column
+    is
+    specified,
+    then
+    this
+    column
+    is
+    displayed
+    by
+    default
+    (but
+    only
+    visible
+    on
+    the
+    output
+    of
+    transparent
+    latches).
+    
+    "\fBtiming_point\fR"
+    Reports
+    the
+    hierarchical
+    names
+    for
+    the
+    given
+    points.
+    
+    "\fB
+    total_derate
+    \fR"
+    Reports
+    the
+    total
+    derating
+    factor
+    applied
+    on
+    the
+    corresponding
+    cell
+    or
+    nets
+    that
+    reflect
+    the
+    combined
+    impact
+    of
+    all
+    the
+    derates
+    (OCV/AOCV/spatial)
+    applied
+    on
+    each
+    stage
+    of
+    the
+    timing
+    path.
+    
+    "\fBuser_derate\fR"
+    Reports
+    the
+    derating
+    scale
+    factors
+    set
+    with
+    the
+    set_timing_derate
+    command.
+    
+    Note:
+    The
+    timing
+    system
+    cannot
+    provide
+    an
+    accurate
+    derating
+    factor
+    for
+    the
+    lumped
+    gate
+    and
+    wire
+    delay
+    when
+    the
+    set_timing_derate
+    factors
+    for
+    -cell_delay
+    and
+    -net_delay
+    are
+    not
+    equivalent.
+    In
+    this
+    case,
+    an
+    asterisk
+    (*)
+    is
+    reported
+    in
+    the
+    SSI
+    Derate
+    column.
+    
+    "\fBwhen_cond\fR"
+    Reports
+    the
+    "when"
+    condition
+    of
+    the
+    arc
+    specified
+    in
+    the
+    library.
+    
+    "\fBwire_load\fR"
+    Reports
+    the
+    wire
+    load.
+    
+    "\fB
+    wlmodel
+    \fR"
+    Reports
+    the
+    kind
+    of
+    parasitic
+    used
+    by
+    a
+    pin
+    or
+    net,
+    such
+    as
+    SPEF.
+    If
+    the
+    wire
+    load
+    model
+    is
+    derived
+    from
+    a
+    Liberty
+    file,
+    the
+    information
+    is
+    reported
+    in
+    the
+    following
+    format:
+    
+    Wireload
+    model
+    (.lib
+    <model_name>
+    <library_name>)
+    
+    .SH
+    Reporting
+    Timing
+    Checks
+    Between
+    Various
+    Types
+    of
+    Clocks
+    .P
+    The
+    following
+    table
+    summarizes
+    the
+    timing
+    checks
+    and
+    the
+    min/max
+    delay
+    checks
+    that
+    are
+    performed
+    based
+    on
+    the
+    types
+    of
+    launching
+    and
+    capturing
+    clocks:
+    .RS
+    
+    "*"
+    2
+    NZ
+    (Non
+    Zero
+    Period
+    Clock
+    -
+    Regular
+    Clock)
+    .RE
+    .RS
+    
+    "*"
+    2
+    Z
+    (Zero
+    Period
+    Clock
+    -
+    Regular
+    clock
+    whose
+    period
+    is
+    equal
+    to
+    zero)
+    .RE
+    .RS
+    
+    "*"
+    2
+    @
+    (Asynchronous
+    Clock
+    -
+    Clock
+    which
+    triggers
+    the
+    default
+    input
+    delay
+    and
+    the
+    input
+    delay
+    without
+    a
+    clock)
+    .RE
+    .RS
+    
+    "*"
+    2
+    CPD
+    (Combinational
+    Path
+    Delay)
+    .RE
+    
+    ________________________________________________________
+    .P
+    |\fB
+    Launching
+    \fR
+    |
+    \fB
+    Capturing
+    \fR
+    |
+    \fB
+    Timing\fR
+    
+    
+    
+    
+    |
+    \fB
+    Path\fR
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    |\fB
+    Clock\fR
+    
+    
+    
+    
+    
+    |
+    \fB
+    Clock\fR
+    
+    
+    
+    
+    
+    |
+    \fB
+    
+    Checks\fR
+    
+    
+    
+    |
+    \fB
+    
+    Delay\fR
+    
+    
+    
+    
+    |
+    
+    
+    |
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    \fB
+    
+    Checks\fR
+    
+    
+    
+    |
+    
+    
+    |____________|_____________|_____________|_____________|
+    .P
+    |
+    
+    @
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    @
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    NO
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    CPD
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    |____________|_____________|_____________|_____________|
+    .P
+    |
+    
+    Z
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    @
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    NO
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    CPD
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    |____________|_____________|_____________|_____________|
+    .P
+    |
+    
+    NZ
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    @
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    NO
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    CPD
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    |____________|_____________|_____________|_____________|
+    .P
+    |
+    
+    @
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    Z
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    YES
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    SPD
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    |____________|_____________|_____________|_____________|
+    .P
+    |
+    
+    @
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    NZ
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    YES
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    SPD
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    |____________|_____________|_____________|_____________|
+    .P
+    |
+    
+    NZ
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    Z
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    NO
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    SPD
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    |____________|_____________|_____________|_____________|
+    .P
+    |
+    
+    Z
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    NZ
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    YES
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    SPD
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    |____________|_____________|_____________|_____________|
+    .P
+    |
+    
+    Z
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    Z
+    
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    YES
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    SPD
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    |____________|_____________|_____________|_____________|
+    .P
+    |
+    
+    NZ
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    NZ
+    
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    YES
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    SPD
+    
+    
+    
+    
+    
+    
+    |
+    
+    
+    |____________|_____________|_____________|_____________|
+    
+    .SH
+    
+    
+    SPD
+    (Sequential
+    Path
+    Delay)Examples
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    reports
+    paths
+    leading
+    to
+    the
+    pin(s)
+    specified
+    by
+    the
+    <pin_list>:
+    
+    
+    report_timing
+    -to
+    u55/D
+    
+    Path
+    1:
+    MET
+    Setup
+    Check
+    with
+    Pin
+    u55/CK
+    
+    
+    
+    Endpoint:
+    u55/D
+    (^)
+    checked
+    with
+    leading
+    edge
+    of
+    'CLK_W_4'
+    
+    
+    
+    Beginpoint:
+    u55/QN
+    (^)
+    triggered
+    by
+    leading
+    edge
+    of
+    'CLK_W_4'
+    
+    
+    
+    Path
+    Groups:
+    {CLK_W_4}
+    
+    
+    
+    Other
+    End
+    Arrival
+    Time
+    0.152
+    
+    
+    
+    -
+    Setup
+    0.306
+    
+    
+    
+    +
+    Phase
+    Shift
+    10.000
+    
+    
+    
+    =
+    Required
+    Time
+    9.845
+    
+    
+    
+    -
+    Arrival
+    Time
+    1.902
+    
+    
+    
+    =
+    Slack
+    Time
+    7.943
+    
+    
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    
+    
+    +
+    Clock
+    Network
+    Latency
+    (Prop)
+    0.152
+    
+    
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.152
+    
+    
+    
+    ---------------------------------------------------------------------------
+    
+    
+    
+    
+    Pin
+    
+    
+    
+    
+    
+    Arc
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Cell
+    
+    
+    
+    
+    
+    Delay
+    
+    
+    
+    
+    Arrival
+    
+    
+    
+    Required
+    
+    
+    
+    Instance
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Time
+    
+    
+    
+    
+    
+    Time
+    
+    
+    
+    
+    --------------------------------------------------------------------------
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    -
+    
+    
+    
+    
+    u55/CK
+    
+    
+    
+    CK
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    -
+    
+    
+    
+    
+    
+    
+    -
+    0.151
+    
+    
+    
+    8.094
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    u55
+    
+    
+    
+    u55/QN
+    
+    
+    
+    CK
+    ^
+    ->
+    QN
+    ^
+    
+    
+    DFF
+    
+    
+    
+    
+    
+    1.750
+    
+    
+    
+    
+    1.901
+    
+    
+    
+    
+    
+    
+    9.844
+    
+    
+    
+    
+    
+    u55
+    
+    
+    
+    u55/D
+    ->
+    
+    D
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    DFF
+    
+    
+    
+    
+    
+    0.001
+    
+    
+    
+    
+    1.902
+    
+    
+    
+    
+    
+    
+    9.845
+    
+    
+    
+    
+    
+    u55
+    
+    
+    
+    --------------------------------------------------------------------------
+    
+    
+    "*"
+    2
+    The
+    following
+    command
+    shows
+    a
+    report
+    similar
+    to
+    the
+    first
+    with
+    the
+    addition
+    of
+    net
+    arc
+    information.
+    
+    report_timing
+    -to
+    u55/D
+    -net
+    
+    
+    Path
+    1:
+    MET
+    Setup
+    Check
+    with
+    Pin
+    u55/CK
+    
+    
+    
+    Endpoint:
+    u55/D
+    (^)
+    checked
+    with
+    leading
+    edge
+    of
+    'CLK_W_4'
+    
+    
+    
+    Beginpoint:
+    u55/QN
+    (^)
+    triggered
+    by
+    leading
+    edge
+    of
+    'CLK_W_4'
+    
+    
+    
+    Path
+    Groups:
+    {CLK_W_4}
+    
+    
+    
+    Other
+    End
+    Arrival
+    Time
+    0.152
+    
+    
+    
+    -
+    Setup
+    0.306
+    
+    
+    
+    +
+    Phase
+    Shift
+    10.000
+    
+    
+    
+    =
+    Required
+    Time
+    9.845
+    
+    
+    
+    -
+    Arrival
+    Time
+    1.902
+    
+    
+    
+    =
+    Slack
+    Time
+    7.943
+    
+    
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    
+    
+    +
+    Clock
+    Network
+    Latency
+    (Prop)
+    0.152
+    
+    
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.152
+    
+    
+    
+    --------------------------------------------------------------------------
+    
+    
+    
+    Pin
+    
+    
+    
+    
+    
+    
+    
+    Arc
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Cell
+    
+    
+    
+    Delay
+    
+    
+    
+    Arrival
+    
+    
+    
+    Required
+    
+    
+    
+    Instance
+    
+    
+    
+    
+    Time
+    Time
+    
+    
+    
+    
+    -------------------------------------------------------------------------
+    
+    
+    
+    u55/CK
+    
+    
+    
+    
+    CK
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    -
+    
+    
+    
+    
+    
+    -
+    
+    
+    
+    
+    
+    
+    
+    0.151
+    
+    
+    
+    
+    8.094
+    
+    
+    
+    
+    
+    
+    u55
+    
+    
+    
+    u55/QN
+    
+    
+    
+    
+    CK
+    ^
+    ->
+    QN
+    ^
+    
+    
+    DFF
+    
+    
+    
+    
+    1.750
+    
+    
+    1.901
+    
+    
+    
+    
+    9.844
+    
+    
+    
+    
+    
+    
+    u55
+    
+    
+    
+    u55/D
+    ->
+    
+    
+    -
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    DFF
+    
+    
+    
+    
+    0.001
+    
+    
+    1.902
+    
+    
+    
+    
+    9.845
+    
+    
+    
+    
+    
+    
+    u55
+    
+    
+    
+    -------------------------------------------------------------------------
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    report_timing
+    command
+    also
+    accepts
+    -collection
+    as
+    an
+    argument.
+    For
+    example,
+    
+    report_timing
+    [report_timing -collection]
+    
+    set
+    rpt
+    [report_timing -collection]
+    
+    report_timing
+    $rpt
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    displays
+    the
+    worst
+    late
+    path
+    in
+    the
+    design.
+    The
+    format
+    of
+    the
+    report
+    is
+    similar
+    to
+    the
+    first
+    example:
+    
+    
+    report_timing
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    displays
+    the
+    worst
+    late
+    path
+    to
+    each
+    violating
+    endpoint
+    that
+    has
+    a
+    slack
+    less
+    than
+    -1.0:
+    
+    
+    report_timing
+    -max_slack
+    -1.0
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    displays
+    all
+    the
+    late
+    paths
+    that
+    end
+    at
+    port
+    out[2]
+    and
+    that
+    have
+    negative
+    slack
+    up
+    to
+    a
+    maximum
+    of
+    1000
+    worst
+    paths.
+    If
+    there
+    are
+    more
+    than
+    1000
+    paths,
+    only
+    the
+    1000
+    worst
+    paths
+    are
+    reported:
+    
+    
+    report_timing
+    -to
+    out[2]
+    -max_paths
+    1000
+    -max_slack
+    0.0
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    reports
+    the
+    worst
+    late
+    path
+    that
+    starts
+    at
+    in[0]
+    and
+    ends
+    at
+    out[1]:
+    
+    
+    report_timing
+    
+    -from
+    in[0]
+    -to
+    out[1]
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    displays
+    the
+    three
+    worst
+    paths
+    that
+    start
+    at
+    in[1]
+    and
+    end
+    at
+    out[3].
+    With
+    reconvergent
+    fanout,
+    more
+    than
+    one
+    path
+    may
+    exist:
+    
+    
+    report_timing
+    -from
+    in[1]
+    
+    -to
+    out[3]
+    
+    -max_paths
+    3
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    displays
+    the
+    ten
+    worst
+    paths.
+    Only
+    the
+    paths
+    between
+    the
+    specified
+    pins
+    are
+    enumerated.With
+    reconvergent
+    fanout,
+    more
+    than
+    one
+    path
+    may
+    exist:
+    report_timing
+    -from
+    i102/Z
+    -to
+    i123/A
+    -max_paths
+    10
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    enumerates
+    the
+    worst
+    ten
+    paths
+    through
+    the
+    given
+    two
+    pins,
+    starting
+    at
+    the
+    beginning
+    points
+    in
+    the
+    design
+    and
+    ending
+    at
+    the
+    endpoints,
+    similar
+    to
+    using
+    the
+    -from
+    option:
+    report_timing
+    -through
+    i102/Z
+    -through
+    i123/A
+    -max_paths
+    10
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    reports
+    the
+    ten
+    worst
+    paths
+    through
+    blocks
+    A
+    and
+    C,
+    or
+    blocks
+    B
+    and
+    C.
+    The
+    path
+    only
+    has
+    to
+    satisfy
+    one
+    element
+    in
+    a
+    through
+    list,
+    but
+    all
+    through
+    lists
+    must
+    be
+    satisfied.
+    The
+    example
+    can
+    be
+    thought
+    of
+    as
+    ((A
+    or
+    B)
+    and
+    C):
+    
+    
+    report_timing
+    -through
+    {A/*B/*}
+    -through
+    {C/*}
+    -max_paths
+    10
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    forces
+    a
+    path
+    through
+    pin
+    A
+    and
+    pin
+    B.
+    Use
+    the
+    syntax
+    shown
+    in
+    the
+    example.
+    Do
+    not
+    use
+    -through
+    {A B}:
+    
+    
+    report_timing
+    -through
+    A
+    -through
+    B
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    displays
+    the
+    clock
+    path
+    through
+    the
+    clock
+    root
+    to
+    Launch
+    flop:
+    report_timing
+    -through
+    aBC_bs/bs_mex1/r2_00_q1_reg_10_/CK
+    -to
+    ....
+    -path_type
+    full_clock
+    
+    
+    "*"
+    2
+    You
+    will
+    not
+    see
+    the
+    path
+    for
+    the
+    launch
+    clock
+    if
+    you
+    specify
+    the
+    following
+    command
+    because
+    the
+    report_timing
+    command
+    starts
+    reporting
+    from
+    the
+    CK
+    pin:
+    
+    report_timing
+    -from
+    aBC_bs/bs_mex1/r2_00_q1_reg_10_/CK
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    first
+    command
+    displays
+    the
+    path
+    leading
+    to
+    the
+    CK
+    pin.
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    shows
+    the
+    -unconstrained
+    option:
+    
+    
+    report_timing
+    -unconstrained
+    
+    Path
+    1:Endpoint:
+    OUT4
+    (^)
+    (unconstrained
+    output)
+    
+    Beginpoint:
+    u55/Q
+    (^)
+    triggered
+    by
+    leading
+    edge
+    of
+    'CLK_W_4'
+    
+    Arrival
+    Time
+    0.365
+    
+    +
+    Clock
+    Network
+    Latency
+    (Prop)
+    0.150
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.150
+    
+    --------------------------------------
+    
+    Load
+    Slew
+    Delay
+    Arrival
+    Cell
+    Arc
+    Pin
+    
+    Time
+    
+    --------------------------------------
+    
+    0.013
+    0.116
+    -
+    0.150
+    -
+    CK
+    ^
+    u55/CK
+    
+    0.011
+    0.072
+    0.215
+    0.365
+    DFF
+    CK
+    ^
+    ->
+    Q
+    ^
+    u55/Q
+    
+    0.011
+    0.131
+    0.000
+    0.365
+    -
+    OUT4
+    ^
+    OUT4
+    ->
+    
+    -------------------------------------
+    
+    .RE
+    .RS
+    
+    "*"
+    2
+    
+    The
+    following
+    command
+    shows
+    the
+    -unconstrained
+    -path_type
+    end
+    report:
+    
+    
+    
+    report_timing
+    -nworst
+    5
+    -unconstrained
+    -path_type
+    end
+    -format
+    {pin arrival phase}
+    
+    ------------------------------------------------------------------
+    
+    Path
+    No.
+    Pin
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Cause
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Arrival
+    
+    Phase
+    
+    ------------------------------------------------------------------
+    
+    1
+    
+    
+    
+    
+    
+    
+    
+    seg3/u9/CK
+    ^
+    
+    Unconstrained
+    Path
+    
+    0.682
+    
+    
+    
+    CLK_W_3(D)(P)
+    *
+    
+    2
+    
+    
+    
+    
+    
+    
+    
+    seg3/u9/CK
+    ^
+    
+    Unconstrained
+    Path
+    
+    0.682
+    
+    
+    
+    CLK_W_3(D)(P)
+    *
+    
+    3
+    
+    
+    
+    
+    
+    
+    
+    seg3/u3/CK
+    ^
+    
+    Unconstrained
+    Path
+    
+    0.682
+    
+    
+    
+    CLK_W_3(D)(P)
+    *
+    
+    4
+    
+    
+    
+    
+    
+    
+    
+    seg3/u3/CK
+    ^
+    
+    Unconstrained
+    Path
+    
+    0.682
+    
+    
+    
+    CLK_W_3(D)(P)
+    *
+    
+    5
+    
+    
+    
+    
+    
+    
+    
+    seg2/u9/CK
+    ^
+    
+    Unconstrained
+    Path
+    
+    0.682
+    
+    
+    
+    CLK_W_2(D)(P)
+    *
+    
+    ------------------------------------------------------------------
+    
+    
+    "*"
+    2
+    The
+    following
+    command
+    sets
+    a
+    false
+    path
+    from
+    u99/Q
+    to
+    u55/D:
+    
+    set_false_path
+    -from
+    u99/Q
+    -to
+    u55/D
+    
+    set_false_path
+    -through
+    u4/Y
+    
+    report_timing
+    -from
+    u99/Q
+    -to
+    u55/D
+    -unconstrained
+    -path_exceptions
+    all
+    
+    Path
+    1:Endpoint:
+    u55/D
+    (^)
+    (unconstrained
+    output)
+    
+    Beginpoint:
+    u99/Q
+    (v)
+    triggered
+    by
+    leading
+    edge
+    of
+    'CLK_W_4'
+    
+    Arrival
+    Time
+    0.827
+    
+    +
+    Clock
+    Network
+    Latency
+    (Prop)
+    0.150
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.150
+    
+    -----------------------------------------------------------
+    
+    Load
+    
+    
+    
+    Slew
+    
+    
+    
+    Delay
+    
+    
+    Arrival
+    
+    
+    Cell
+    
+    
+    Arc
+    
+    
+    Pin
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Time
+    
+    -----------------------------------------------------------
+    
+    0.013
+    
+    
+    0.116
+    
+    
+    -
+    
+    
+    
+    
+    
+    
+    
+    0.150
+    
+    
+    
+    -
+    
+    
+    
+    
+    CK
+    ^
+    
+    
+    
+    
+    
+    
+    
+    u99/CK
+    
+    0.027
+    
+    
+    0.086
+    
+    
+    0.195
+    
+    
+    
+    0.345
+    
+    
+    
+    DFF
+    
+    
+    CK
+    ^
+    ->
+    Q
+    v
+    u99/Q
+    ->
+    
+    1.006
+    
+    
+    1.140
+    
+    
+    0.482
+    
+    
+    
+    0.827
+    
+    
+    
+    INV
+    
+    
+    A
+    v
+    ->
+    Y
+    ^
+    
+    u4/Y
+    
+    1.006
+    
+    
+    1.140
+    
+    
+    0.000
+    
+    
+    
+    0.827
+    
+    
+    
+    DFF
+    
+    
+    D
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    u55/D
+    ->
+    
+    ------------------------------------------------------------
+    
+    Applied
+    exceptions:
+    
+    ---------------------------------
+    
+    Through
+    Late
+    
+    ---------------------------------
+    
+    u4/Y
+    false
+    
+    ---------------------------------
+    
+    Ignored
+    exceptions:
+    
+    ---------------------------------
+    
+    From
+    To
+    Late
+    
+    ---------------------------------
+    
+    u99/Q
+    u55/D
+    false
+    
+    ---------------------------------
+    
+    .RE
+    .RS
+    
+    "*"
+    2
+    For
+    hold
+    paths,
+    if
+    the
+    path
+    has
+    a
+    setup
+    multi-cycle
+    path
+    then
+    those
+    exceptions
+    will
+    also
+    be
+    reported
+    because
+    hold
+    slacks
+    get
+    impacted
+    by
+    inferred
+    path
+    exceptions.
+    For
+    example:
+    
+    set_multicycle_path
+    2
+    -setup
+    -from
+    IN1
+    
+    Path
+    1:
+    VIOLATED
+    Hold
+    Check
+    with
+    Pin
+    seg1/u3/CK
+    
+    Endpoint:
+    seg1/u3/D
+    (v)
+    checked
+    with
+    leading
+    edge
+    of
+    'CLK_W_1'
+    
+    Beginpoint:
+    IN1
+    (v)
+    triggered
+    by
+    leading
+    edge
+    of
+    '@'
+    
+    Path
+    Groups:
+    {CLK_W_1}
+    
+    Other
+    End
+    Arrival
+    Time
+    0.682
+    
+    +
+    Hold
+    -0.034
+    
+    +
+    Phase
+    Shift
+    0.000
+    
+    -
+    Cycle
+    Adjustment
+    -20.000
+    
+    =
+    Required
+    Time
+    20.648
+    
+    Arrival
+    Time
+    0.117
+    
+    Slack
+    Time
+    -20.531
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    +
+    Input
+    Delay
+    0.000
+    
+    +
+    Drive
+    Adjustment
+    -0.014
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    -0.014
+    
+    -------------------------------------------------------------
+    
+    Load
+    
+    
+    
+    Slew
+    
+    
+    
+    Delay
+    
+    
+    Arrival
+    
+    
+    Cell
+    
+    
+    Arc
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Pin
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Time
+    
+    --------------------------------------------------------------
+    
+    0.013
+    
+    
+    0.029
+    
+    
+    -
+    
+    
+    
+    
+    
+    -0.014
+    
+    
+    
+    -
+    
+    
+    
+    
+    
+    
+    IN1
+    v
+    
+    
+    
+    
+    
+    
+    
+    IN1
+    
+    0.013
+    
+    
+    0.057
+    
+    
+    0.054
+    
+    0.040
+    
+    
+    
+    
+    CLKBUF
+    
+    A
+    v
+    ->
+    Y
+    v
+    
+    
+    seg1/u1/Y
+    
+    0.003
+    
+    
+    0.050
+    
+    
+    0.077
+    
+    0.117
+    
+    
+    
+    
+    CLKBUF
+    
+    A
+    v
+    ->
+    Y
+    v
+    
+    
+    seg1/u2/Y
+    
+    0.003
+    
+    
+    0.050
+    
+    
+    0.000
+    
+    0.117
+    
+    
+    
+    
+    DFF
+    
+    
+    
+    
+    D
+    v
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    seg1/u3/D
+    
+    ---------------------------------------------------------------
+    
+    Applied
+    exceptions:
+    
+    ---------------------------------
+    
+    From
+    Early
+    Late
+    
+    ---------------------------------
+    
+    IN1
+    -
+    cycles
+    2
+    
+    ---------------------------------
+    
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    displays
+    the
+    timing
+    report
+    for
+    analysis
+    view
+    setup_view1:
+    
+    report_timing
+    -view
+    setup_view1
+    
+    Path
+    1:
+    MET
+    Late
+    External
+    Delay
+    Assertion
+    
+    Endpoint:
+    EJ_TDOzstate
+    (^)
+    checked
+    with
+    leading
+    edge
+    of
+    'virt_out_EJ_TCK'
+    
+    Beginpoint:
+    core_ejt_ejt_tap_ejt_tck__EJ_TDOzstate_q_reg_0_/Q
+    (^)
+    triggered
+    by
+    trailing
+    edge
+    of
+    'EJ_TCK'
+    
+    Path
+    Groups:
+    {virt_out_EJ_TCK}
+    
+    Analysis
+    View:
+    setup_view1
+    
+    Other
+    End
+    Arrival
+    Time
+    0.000
+    
+    +
+    Source
+    Insertion
+    Delay
+    0.300
+    
+    -
+    External
+    Delay
+    1.250
+    
+    +
+    Phase
+    Shift
+    17.400
+    
+    +
+    CPPR
+    Adjustment
+    0.000
+    
+    =
+    Required
+    Time
+    16.450
+    
+    -
+    Arrival
+    Time
+    9.318
+    
+    =
+    Slack
+    Time
+    7.132
+    
+    Clock
+    Fall
+    Edge
+    8.700
+    
+    +
+    Clock
+    Network
+    Latency
+    (Ideal)
+    0.000
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    8.700
+    
+    --------------------------------------------------------------------
+    
+    Load
+    
+    
+    Slew
+    
+    
+    Delay
+    
+    
+    Arrival
+    
+    
+    Cell
+    
+    
+    
+    
+    
+    
+    Arc
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Pin
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Time
+    
+    --------------------------------------------------------------------
+    
+    0.010
+    
+    0.000
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    8.700
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    CP
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    core_ejt_ejt
+    
+    0.118
+    
+    0.145
+    
+    0.127
+    
+    
+    8.828
+    
+    
+    
+    
+    
+    DFSVTD4
+    
+    
+    CP
+    ^
+    ->
+    Q
+    ^
+    
+    
+    
+    core_reg_0_/Q
+    
+    0.525
+    
+    0.438
+    
+    0.411
+    
+    
+    9.238
+    
+    
+    
+    
+    
+    BUFVTD6
+    
+    
+    I
+    ^
+    ->
+    Z
+    ^
+    
+    
+    
+    
+    FE_OFC260_/Z
+    
+    0.525
+    
+    0.474
+    
+    0.080
+    
+    
+    9.318
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    EJ_TDOzstate
+    ^
+    EJ_TDOzstate
+    
+    ---------------------------------------------------------------------
+    
+    .RE
+    .P
+    Sample
+    Reports
+    .RS
+    
+    "*"
+    2
+    
+    report_timing
+    -to
+    u55/D
+    -from
+    u99/Q
+    -point_to_point
+    #when
+    -from
+    is
+    intermediate
+    begin
+    point:
+    
+    Path
+    1:Endpoint:
+    u55/D
+    (^)
+    (unconstrained
+    output)
+    
+    
+    
+    Beginpoint:
+    u99/Q
+    (v)
+    triggered
+    by
+    leading
+    edge
+    of
+    'CLK_W_4'
+    
+    
+    
+    Arrival
+    Time
+    0.482
+    
+    
+    
+    -------------------------------------------------------------
+    
+    
+    
+    Load
+    
+    
+    Slew
+    
+    
+    
+    Delay
+    
+    
+    Arrival
+    
+    
+    Cell
+    
+    
+    Arc
+    
+    
+    
+    
+    
+    
+    
+    Pin
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Time
+    
+    
+    
+    -------------------------------------------------------------
+    
+    
+    
+    0.027
+    
+    0.086
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    0.000
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Q
+    v
+    
+    
+    
+    
+    
+    
+    
+    u99/Q
+    ->
+    
+    
+    
+    1.006
+    
+    1.140
+    
+    0.482
+    
+    
+    0.482
+    
+    
+    
+    
+    
+    INV
+    
+    
+    
+    A
+    v
+    ->
+    Y
+    ^
+    u4/Y
+    
+    
+    
+    1.006
+    
+    1.140
+    
+    0.000
+    
+    
+    0.482
+    
+    
+    
+    
+    
+    DFF
+    
+    
+    
+    D
+    ^
+    
+    
+    
+    
+    
+    
+    
+    u55/D
+    ->
+    
+    
+    
+    ------------------------------------------------------------
+    
+    
+    
+    "*"
+    2
+    The
+    following
+    command
+    recalculates
+    the
+    specified
+    critical
+    paths
+    using
+    the
+    AOCV
+    factor
+    and
+    generates
+    the
+    following
+    timing
+    report:
+    
+    report_timing
+    -from
+    in3
+    -to
+    Top_I9/D
+    -retime
+    aocv
+    -path_type
+    full_clock
+    
+    Path
+    1:
+    MET
+    Setup
+    Check
+    with
+    Pin
+    Top_I9/CK
+    
+    Endpoint:
+    Top_I9/D
+    (v)
+    checked
+    with
+    leading
+    edge
+    of
+    'clk2'
+    
+    Beginpoint:
+    in3
+    (^)
+    triggered
+    by
+    leading
+    edge
+    of
+    '@'
+    
+    Path
+    Groups:
+    {clk2}
+    
+    Retime
+    Analysis
+    { AOCV(Default) }
+    
+    Other
+    End
+    Arrival
+    Time
+    0.000
+    
+    -
+    Setup
+    0.248
+    
+    +
+    Phase
+    Shift
+    1.000
+    
+    =
+    Required
+    Time
+    0.752
+    
+    -
+    Arrival
+    Time
+    0.061
+    
+    =
+    Slack
+    Time
+    0.691
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    +
+    Input
+    Delay
+    0.000
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.000
+    
+    Timing
+    Path:
+    
+    ----------------------------------------------------------
+    
+    Load
+    
+    
+    Slew
+    
+    
+    
+    Delay
+    
+    
+    Aocv
+    
+    
+    
+    Cell
+    
+    
+    Arc
+    
+    
+    
+    Pin
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Derate
+    
+    ----------------------------------------------------------
+    
+    0.011
+    
+    0.004
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    in3
+    ^
+    
+    
+    
+    
+    
+    
+    in3
+    ->
+    
+    0.011
+    
+    0.004
+    
+    0.001
+    
+    
+    1.173
+    
+    
+    INVX1
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Top_I8/A
+    
+    0.007
+    
+    0.076
+    
+    0.060
+    
+    
+    1.175
+    
+    
+    INVX1
+    
+    A
+    ^
+    ->
+    Y
+    v
+    
+    Top_I8/Y
+    
+    0.007
+    
+    0.076
+    
+    0.000
+    
+    
+    1.173
+    
+    
+    DFFX1
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Top_I9/D
+    ->
+    
+    ----------------------------------------------------------
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.000
+    
+    Other
+    End
+    Path:
+    
+    -----------------------------------------------------
+    
+    Load
+    
+    
+    
+    Slew
+    
+    
+    
+    Delay
+    
+    Aocv
+    
+    Cell
+    
+    
+    Arc
+    
+    
+    
+    
+    Pin
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Derate
+    
+    -----------------------------------------------------
+    
+    0.012
+    
+    
+    0.000
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    clk2
+    ^
+    
+    
+    clk2
+    
+    0.012
+    
+    
+    0.000
+    
+    0.000
+    
+    
+    0.825
+    DFFX1
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Top_I9/CK
+    
+    ----------------------------------------------------
+    
+    .RE
+    .P
+    
+    .RS
+    
+    "*"
+    2
+    
+    The
+    following
+    command
+    recalculates
+    the
+    specified
+    critical
+    paths
+    using
+    the
+    AOCV
+    factor
+    and
+    generates
+    an
+    AOCV
+    derating
+    summary
+    table
+    for
+    the
+    launch
+    and
+    capture
+    paths,
+    in
+    addition
+    to
+    the
+    timing
+    report:
+    
+    
+    report_timing
+    -from
+    in3
+    -to
+    Top_I9/D
+    -retime
+    aocv
+    -path_type
+    full_clock
+    -derate_summary
+    
+    Path
+    1:
+    MET
+    Setup
+    Check
+    with
+    Pin
+    Top_I9/CK
+    
+    Endpoint:
+    Top_I9/D
+    (v)
+    checked
+    with
+    leading
+    edge
+    of
+    'clk2'
+    
+    Beginpoint:
+    in3
+    (^)
+    triggered
+    by
+    leading
+    edge
+    of
+    '@'
+    
+    Path
+    Groups:
+    {clk2}
+    
+    Retime
+    Analysis
+    { AOCV(Default) }
+    
+    Other
+    End
+    Arrival
+    Time
+    0.000
+    
+    -
+    Setup
+    0.248
+    
+    +
+    Phase
+    Shift
+    1.000
+    
+    =
+    Required
+    Time
+    0.752
+    
+    -
+    Arrival
+    Time
+    0.061
+    
+    =
+    Slack
+    Time
+    0.691
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    +
+    Input
+    Delay
+    0.000
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.000
+    
+    Timing
+    Path:
+    
+    -------------------------------------------------------
+    
+    Load
+    
+    
+    
+    Slew
+    
+    
+    Delay
+    
+    Aocv
+    
+    
+    Cell
+    
+    
+    Arc
+    
+    
+    
+    
+    
+    
+    
+    
+    Pin
+    
+    Derate
+    
+    -------------------------------------------------------
+    
+    0.011
+    
+    
+    0.004
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    in3
+    ^
+    
+    
+    
+    
+    
+    in3
+    ->
+    
+    0.011
+    
+    
+    0.004
+    
+    0.001
+    
+    1.173
+    
+    INVX1
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Top_I8/A
+    
+    0.007
+    
+    
+    0.076
+    
+    0.060
+    
+    1.175
+    
+    INVX1
+    
+    A
+    ^
+    ->
+    Y
+    v
+    Top_I8/Y
+    
+    0.007
+    
+    
+    0.076
+    
+    0.000
+    
+    1.173
+    
+    DFFX1
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Top_I9/D
+    ->
+    
+    -----------------------------------------------------------
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.000
+    
+    Other
+    End
+    Path:
+    
+    ---------------------------------------------------
+    
+    Load
+    
+    
+    Slew
+    
+    
+    
+    Delay
+    
+    Aocv
+    
+    
+    Cell
+    
+    
+    Arc
+    
+    
+    
+    
+    
+    Pin
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Derate
+    
+    ---------------------------------------------------
+    
+    0.012
+    
+    0.000
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    clk2
+    ^
+    
+    clk2
+    
+    0.012
+    
+    0.000
+    
+    0.000
+    
+    
+    0.825
+    
+    DFFX1
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Top_I9/CK
+    
+    -----------------------------------------------------
+    
+    DUAL
+    LOCV
+    Derate
+    Summary
+    
+    Clock
+    Branch
+    Point
+    None
+    
+    Distance
+    89.944
+    
+    
+    
+    "*"
+    2
+    
+    The
+    following
+    command
+    reports
+    pin
+    names
+    and
+    net
+    names
+    in
+    the
+    same
+    column
+    alternatively:
+    
+    
+    
+    report_timing
+    -format
+    { load slew delay arrival cell pin_load fanout timing_point}
+    -net
+    
+    Path
+    1:
+    MET
+    Setup
+    Check
+    with
+    Pin
+    u55/CK
+    
+    Endpoint:
+    u55/D
+    (^)
+    checked
+    with
+    leading
+    edge
+    of
+    'CLK_W_4'
+    
+    Beginpoint:
+    u99/Q
+    (v)
+    triggered
+    by
+    leading
+    edge
+    of
+    'CLK_W_4'
+    
+    Path
+    Groups:
+    {CLK_W_4}
+    
+    Other
+    End
+    Arrival
+    Time
+    0.150
+    
+    -
+    Setup
+    0.176
+    
+    +
+    Phase
+    Shift
+    10.000
+    
+    =
+    Required
+    Time
+    9.974
+    
+    -
+    Arrival
+    Time
+    0.827
+    
+    =
+    Slack
+    Time
+    9.148
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    +
+    Clock
+    Network
+    Latency
+    (Prop)
+    0.150
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.150
+    
+    -------------------------------------------------------------------
+    
+    Load
+    
+    
+    
+    Slew
+    
+    
+    
+    Delay
+    
+    Arrival
+    
+    Cell
+    
+    
+    
+    Pin
+    Load
+    Fanout
+    Timing
+    Point
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Time
+    
+    -------------------------------------------------------------------
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    0.116
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    0.150
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    u99/CK
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    0.086
+    
+    0.195
+    
+    
+    0.345
+    
+    
+    
+    DFF
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    u99/Q
+    
+    0.027
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    (net)
+    
+    
+    0.027
+    
+    
+    
+    1
+    
+    
+    
+    
+    
+    n3
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    0.086
+    
+    0.000
+    
+    
+    0.345
+    
+    
+    
+    INV
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    u4/A
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    1.140
+    
+    0.482
+    
+    
+    0.827
+    
+    
+    
+    INV
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    u4/Y
+    
+    1.006
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    (net)
+    
+    
+    1.006
+    
+    
+    
+    2
+    
+    
+    
+    
+    
+    n4
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    1.140
+    
+    0.000
+    
+    
+    0.827
+    
+    
+    
+    DFF
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    u55/D
+    ->
+    
+    -------------------------------------------------------------------
+    
+    
+    
+    "*"
+    2
+    
+    The
+    following
+    command
+    reports
+    power
+    domain
+    details
+    of
+    path
+    instances:
+    
+    
+    report_timing
+    -format
+    { load slew delay arrival cell arc hpin power_domain}
+    
+    Path
+    1:
+    MET
+    Setup
+    Check
+    with
+    Pin
+    u55/CK
+    
+    Endpoint:
+    u55/D
+    (^)
+    checked
+    with
+    leading
+    edge
+    of
+    'CLK_W_4'
+    
+    Beginpoint:
+    u99/Q
+    (v)
+    triggered
+    by
+    leading
+    edge
+    of
+    'CLK_W_4'
+    
+    Path
+    Groups:
+    {CLK_W_4}
+    
+    Other
+    End
+    Arrival
+    Time
+    0.150
+    
+    -
+    Setup
+    0.176
+    
+    +
+    Phase
+    Shift
+    10.000
+    
+    =
+    Required
+    Time
+    9.974
+    
+    -
+    Arrival
+    Time
+    0.827
+    
+    =
+    Slack
+    Time
+    9.148
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    +
+    Clock
+    Network
+    Latency
+    (Prop)
+    0.150
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.150
+    
+    ----------------------------------------------------------------
+    
+    Load
+    
+    
+    Slew
+    
+    
+    Delay
+    
+    Arrival
+    
+    
+    Cell
+    
+    
+    Arc
+    
+    
+    
+    
+    
+    
+    
+    Pin
+    
+    
+    
+    
+    
+    
+    Power
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Time
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Domain
+    
+    ----------------------------------------------------------------
+    
+    0.013
+    
+    0.116
+    
+    
+    
+    
+    
+    
+    
+    
+    0.150
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    CK
+    ^
+    
+    
+    
+    
+    
+    
+    
+    u99/CK
+    
+    
+    0.027
+    
+    0.086
+    
+    0.195
+    
+    0.345
+    
+    
+    
+    
+    
+    DFF
+    
+    
+    CK
+    ^
+    ->
+    Q
+    v
+    u99/Q
+    
+    
+    
+    PD1
+    
+    1.006
+    
+    1.140
+    
+    0.482
+    
+    0.827
+    
+    
+    
+    
+    
+    INV
+    
+    
+    A
+    v
+    ->
+    Y
+    ^
+    
+    u4/Y
+    
+    
+    
+    
+    PD2
+    
+    1.006
+    
+    1.140
+    
+    0.000
+    
+    0.827
+    
+    
+    
+    
+    
+    DFF
+    
+    
+    D
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    u55/D
+    ->
+    PD1
+    
+    ----------------------------------------------------------------
+    
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    examples
+    refer
+    to
+    the
+    figure
+    shown
+    below:
+    .RE
+    .P
+    Conditions
+    for
+    Unconstrained
+    and
+    Constrained
+    Paths
+    .P
+    (<Image>
+    To
+    view
+    the
+    image,
+    refer
+    to
+    the
+    Innovus
+    Text
+    Command
+    Reference
+    -
+    Release
+    20.1
+    manual.)
+    
+    .RS
+    
+    "*"
+    2
+    
+    Shows
+    the
+    path
+    from
+    I
+    to
+    O
+    is
+    reported
+    as
+    an
+    unconstrained
+    path
+    under
+    the
+    following
+    conditions
+    (constraints
+    on
+    I
+    and
+    O):
+    .RE
+    .RS
+    
+    "*"
+    2
+    No
+    constraints
+    on
+    either
+    I
+    or
+    O
+    .RE
+    .RS
+    
+    "*"
+    2
+    set_input_delay
+    -clock
+    ck1
+    1.0
+    I
+    
+    No
+    set_output_delay
+    constraint
+    on
+    O
+    .RE
+    .RS
+    
+    "*"
+    2
+    set_input_delay
+    1.0
+    I
+    
+    set_output_delay
+    1.1
+    O
+    .RE
+    .RS
+    
+    "*"
+    2
+    Shows
+    the
+    path
+    from
+    I
+    to
+    O
+    is
+    reported
+    as
+    a
+    constrained
+    path
+    under
+    the
+    following
+    conditions
+    (constraints
+    on
+    I
+    and
+    O):
+    .RE
+    .RS
+    
+    "*"
+    2
+    set_input_delay
+    -clock
+    ck1
+    1.0
+    I
+    
+    set_output_delay
+    -clock
+    ck1
+    1.0
+    O
+    .RE
+    .RS
+    
+    "*"
+    2
+    set_input_delay
+    -clock
+    ck1
+    1.0
+    I
+    
+    set_output_delay
+    -clock
+    ck2
+    1.0
+    O
+    
+    
+    "*"
+    2
+    set_output_delay
+    -clock
+    ck1
+    1.0
+    O
+    
+    No
+    set_input_delay
+    constraint
+    on
+    I.
+    It
+    uses
+    default
+    delay
+    of
+    zero.
+    
+    
+    Default:
+    -late
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    reports
+    AOCV
+    weight
+    details
+    of
+    path
+    elements:
+    
+    report_timing
+    -from
+    in3
+    -to
+    Top_I9/D
+    -format
+    {instance cell arc delay        aocv_derate stage_count arrival aocv_weight}
+    -path_type
+    full_clock
+    
+    Path
+    1:
+    MET
+    Setup
+    Check
+    with
+    Pin
+    Top_I9/CK
+    
+    Endpoint:
+    Top_I9/D
+    (v)
+    checked
+    with
+    leading
+    edge
+    of
+    'clk2'
+    
+    Beginpoint:
+    in3
+    (^)
+    triggered
+    by
+    leading
+    edge
+    of
+    '@'
+    
+    Path
+    Groups:
+    {clk2}
+    
+    Other
+    End
+    Arrival
+    Time
+    0.000
+    
+    -
+    Setup
+    0.248
+    
+    +
+    Phase
+    Shift
+    1.000
+    
+    =
+    Required
+    Time
+    0.752
+    
+    -
+    Arrival
+    Time
+    0.061
+    
+    =
+    Slack
+    Time
+    0.691
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    +
+    Input
+    Delay
+    0.000
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.000
+    
+    Timing
+    Path:
+    
+    -----------------------------------------------------------------------
+    
+    Instance
+    
+    
+    
+    
+    Cell
+    
+    
+    
+    
+    
+    Arc
+    
+    
+    
+    
+    Delay
+    
+    
+    
+    Aocv
+    
+    
+    
+    Aocv
+    
+    
+    
+    Arrival
+    
+    
+    
+    Aocv
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Derate
+    
+    Stage
+    
+    
+    Time
+    
+    
+    
+    
+    
+    
+    Weight
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Count
+    
+    -----------------------------------------------------------------------
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    in3
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    0.000
+    
+    Top_I8
+    
+    
+    
+    
+    
+    
+    INVX1
+    
+    
+    
+    A
+    ^
+    ->
+    Y
+    v
+    
+    0.061
+    
+    1.175
+    
+    1.000
+    
+    
+    
+    0.061
+    
+    
+    
+    
+    1
+    
+    Top_I9
+    
+    
+    
+    
+    
+    
+    DFFX1
+    
+    
+    
+    D
+    v
+    
+    
+    
+    
+    
+    
+    
+    
+    0.000
+    
+    1.173
+    
+    2.000
+    
+    
+    
+    0.061
+    
+    
+    
+    
+    1
+    
+    -----------------------------------------------------------------------
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.000
+    
+    Other
+    End
+    Path:
+    
+    -----------------------------------------------------------------------
+    
+    Instance
+    
+    
+    Cell
+    
+    
+    
+    
+    
+    Arc
+    
+    
+    
+    
+    
+    
+    Delay
+    
+    
+    
+    
+    Aocv
+    
+    
+    
+    Aocv
+    
+    
+    Arrival
+    
+    
+    
+    Aocv
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Derate
+    
+    Stage
+    
+    Time
+    
+    
+    
+    
+    
+    
+    Weight
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Count
+    
+    -----------------------------------------------------------------------
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    clk2
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    0.000
+    
+    
+    Top_I9
+    
+    
+    
+    DFFX1
+    
+    
+    
+    
+    CK
+    ^
+    
+    
+    
+    
+    
+    
+    0.000
+    
+    
+    
+    
+    0.825
+    
+    
+    1.000
+    
+    0.000
+    
+    
+    
+    
+    
+    1
+    
+    ----------------------------------------------------------------------
+    
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    reports
+    paths
+    through
+    unique
+    set
+    of
+    pins:
+    
+    
+    report_timing
+    -nworst
+    2
+    -unique_pins
+    
+    Path
+    1:
+    MET
+    Setup
+    Check
+    with
+    Pin
+    seg3/u14/CK
+    
+    Endpoint:
+    seg3/u14/D
+    (^)
+    checked
+    with
+    leading
+    edge
+    of
+    'CLK_W_3'
+    
+    Beginpoint:
+    seg3/u9/Q
+    (^)
+    triggered
+    by
+    leading
+    edge
+    of
+    'CLK_W_3'
+    
+    Path
+    Groups:
+    {CLK_W_3}
+    
+    Other
+    End
+    Arrival
+    Time
+    0.621
+    
+    -
+    Setup
+    0.186
+    
+    +
+    Phase
+    Shift
+    2.000
+    
+    =
+    Required
+    Time
+    2.434
+    
+    -
+    Arrival
+    Time
+    2.062
+    
+    =
+    Slack
+    Time
+    0.372
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    +
+    Clock
+    Network
+    Latency
+    (Prop)
+    0.682
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.682
+    
+    -----------------------------------------------------------
+    
+    Load
+    
+    
+    Slew
+    
+    
+    
+    Delay
+    
+    Arrival
+    
+    
+    Cell
+    
+    
+    Arc
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Pin
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Time
+    
+    -----------------------------------------------------------
+    
+    0.008
+    
+    0.049
+    
+    0.682
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    CK
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    seg3/u9/CK
+    
+    0.011
+    
+    0.075
+    
+    0.185
+    
+    
+    0.867
+    
+    
+    
+    
+    DFF
+    
+    
+    
+    CK
+    ^
+    ->
+    Q
+    ^
+    
+    seg3/u9/Q
+    
+    0.027
+    
+    0.077
+    
+    0.073
+    
+    
+    0.940
+    
+    
+    
+    
+    BUF
+    
+    
+    
+    A
+    ^
+    ->
+    Y
+    ^
+    
+    
+    seg3/u10/Y
+    
+    1.027
+    
+    0.644
+    
+    0.317
+    
+    
+    1.257
+    
+    
+    
+    
+    INV
+    
+    
+    
+    A
+    ^
+    ->
+    Y
+    v
+    
+    
+    seg3/u11/Y
+    
+    1.011
+    
+    1.087
+    
+    0.402
+    
+    
+    1.659
+    
+    
+    
+    
+    INV
+    
+    
+    
+    A
+    v
+    ->
+    Y
+    ^
+    
+    
+    seg3/u12/Y
+    
+    0.003
+    
+    1.077
+    
+    0.403
+    
+    
+    2.062
+    
+    
+    
+    
+    BUF
+    
+    
+    
+    A
+    ^
+    ->
+    Y
+    ^
+    
+    
+    seg3/u13/Y
+    
+    0.003
+    
+    1.077
+    
+    0.000
+    
+    
+    2.062
+    
+    
+    
+    
+    DFF
+    
+    
+    
+    D
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    seg3/u14/D
+    
+    -------------------------------------------------------------
+    
+    Path
+    2:
+    MET
+    Setup
+    Check
+    with
+    Pin
+    u2/CK
+    
+    Endpoint:
+    u2/D
+    (v)
+    checked
+    with
+    leading
+    edge
+    of
+    'CLK_W_1'
+    
+    Beginpoint:
+    CLK2
+    (v)
+    triggered
+    by
+    trailing
+    edge
+    of
+    'CLK_W_2'
+    
+    Path
+    Groups:
+    {CLK_W_1}
+    
+    Other
+    End
+    Arrival
+    Time
+    0.000
+    
+    -
+    Setup
+    0.188
+    
+    +
+    Phase
+    Shift
+    15.000
+    
+    =
+    Required
+    Time
+    14.812
+    
+    -
+    Arrival
+    Time
+    12.463
+    
+    =
+    Slack
+    Time
+    2.349
+    
+    Clock
+    Fall
+    Edge
+    12.500
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    12.500
+    
+    ----------------------------------------------------------
+    
+    Load
+    
+    
+    
+    Slew
+    
+    
+    Delay
+    
+    
+    
+    Arrival
+    
+    
+    
+    Cell
+    
+    
+    
+    Arc
+    
+    
+    
+    Pin
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Time
+    
+    ----------------------------------------------------------
+    
+    0.034
+    
+    0.003
+    
+    
+    12.500
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    CLK2
+    v
+    
+    
+    
+    
+    
+    CLK2
+    
+    0.003
+    
+    0.003
+    
+    
+    -0.037
+    
+    
+    12.463
+    
+    
+    
+    
+    BUF
+    
+    
+    
+    A
+    v
+    ->
+    Y
+    v
+    
+    u10999/Y
+    
+    0.003
+    
+    0.003
+    
+    
+    0.000
+    
+    
+    
+    12.463
+    
+    
+    
+    
+    DFF
+    
+    
+    
+    D
+    v
+    
+    
+    
+    
+    
+    
+    
+    
+    u2/D
+    
+    ----------------------------------------------------------
+    
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    reports
+    all
+    the
+    violating
+    paths
+    (or
+    having
+    slack
+    greater
+    than
+    the
+    value
+    specified
+    with
+    '-max_slack')
+    between
+    unique
+    source
+    and
+    target
+    register
+    pairs:
+    
+    report_timing
+    -to
+    u55/D
+    -begin_end_pair
+    -max_slack
+    10
+    
+    Path
+    1:
+    MET
+    Setup
+    Check
+    with
+    Pin
+    u55/CK
+    
+    Endpoint:
+    u55/D
+    (^)
+    checked
+    with
+    leading
+    edge
+    of
+    'CLK_W_4'
+    
+    Beginpoint:
+    u99/Q
+    (v)
+    triggered
+    by
+    leading
+    edge
+    of
+    'CLK_W_4'
+    
+    Path
+    Groups:
+    {CLK_W_4}
+    
+    Other
+    End
+    Arrival
+    Time
+    0.150
+    
+    -
+    Setup
+    0.176
+    
+    +
+    Phase
+    Shift
+    10.000
+    
+    =
+    Required
+    Time
+    9.974
+    
+    -
+    Arrival
+    Time
+    0.827
+    
+    =
+    Slack
+    Time
+    9.148
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    +
+    Clock
+    Network
+    Latency
+    (Prop)
+    0.150
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.150
+    
+    ----------------------------------------------------------
+    
+    Load
+    
+    
+    
+    Slew
+    
+    
+    
+    Delay
+    
+    
+    
+    Arrival
+    
+    
+    
+    Cell
+    
+    
+    
+    Arc
+    
+    
+    
+    Pin
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Time
+    
+    ----------------------------------------------------------
+    
+    0.013
+    
+    
+    0.116
+    
+    
+    0.150
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    CK
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    u99/CK
+    
+    0.027
+    
+    
+    0.086
+    
+    
+    0.195
+    
+    
+    
+    0.345
+    
+    
+    
+    
+    
+    DFF
+    
+    
+    
+    CK
+    ^
+    ->
+    Q
+    v
+    
+    u99/Q
+    
+    1.006
+    
+    
+    1.140
+    
+    
+    0.482
+    
+    
+    
+    0.827
+    
+    
+    
+    
+    
+    INV
+    
+    
+    
+    A
+    v
+    ->
+    Y
+    ^
+    
+    
+    u4/Y
+    
+    1.006
+    
+    
+    1.140
+    
+    
+    0.000
+    
+    
+    
+    0.827
+    
+    
+    
+    
+    
+    DFF
+    
+    
+    
+    D
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    u55/D
+    ->
+    
+    ----------------------------------------------------------
+    
+    .RE
+    .RS
+    
+    "*"
+    2
+    The
+    following
+    command
+    generates
+    a
+    group
+    based
+    report
+    in
+    non-group
+    mode:
+    
+    report_timing
+    -begin_end_pair
+    -max_slack
+    10
+    -path_type
+    end_slack_only
+    
+    Path
+    Groups:
+    max_delay/setup
+    {CLK_W_1}
+    
+    
+    
+    -----------------------------------------------
+    
+    
+    
+    End
+    Point
+    Slack
+    Cause
+    
+    
+    
+    -----------------------------------------------
+    
+    
+    
+    u2/D
+    f
+    2.349
+    MET
+    
+    
+    
+    -----------------------------------------------
+    
+    Path
+    Groups:
+    max_delay/setup
+    {CLK_W_3}
+    
+    
+    
+    -----------------------------------------------
+    
+    
+    
+    End
+    Point
+    Slack
+    Cause
+    
+    
+    
+    -----------------------------------------------
+    
+    
+    
+    seg3/u14/D
+    r
+    0.372
+    MET
+    
+    
+    
+    seg3/u3/D
+    f
+    2.397
+    MET
+    
+    
+    
+    ----------------------------------------------
+    
+    53.
+    report_timing
+    -
+    -path_type
+    full_clock
+    -net
+    -debug
+    time_borrow
+    
+    
+    
+    Path
+    1:
+    MET
+    Latch
+    Borrowed
+    Time
+    Check
+    with
+    Pin
+    latch2/GN
+    
+    
+    
+    Endpoint:
+    latch2/D
+    (^)
+    checked
+    with
+    trailing
+    edge
+    of
+    'CK1'
+    
+    
+    
+    Beginpoint:
+    ff1/Q
+    (v)
+    triggered
+    by
+    leading
+    edge
+    of
+    'CK1'
+    
+    
+    
+    Path
+    Groups:
+    {CK1}
+    
+    
+    
+    Other
+    End
+    Arrival
+    Time
+    2.558
+    
+    
+    
+    +
+    Borrow
+    Edge
+    Adjust
+    0.043
+    
+    
+    
+    +
+    Phase
+    Shift
+    0.000
+    
+    
+    
+    +
+    CPPR
+    Adjustment
+    0.000
+    
+    
+    
+    =
+    Required
+    Time
+    2.601
+    
+    
+    
+    -
+    Arrival
+    Time
+    0.544
+    
+    
+    
+    =
+    Slack
+    Time
+    2.057
+    
+    
+    
+    Clock
+    Rise
+    Edge
+    0.000
+    
+    
+    
+    +
+    Clock
+    Network
+    Latency
+    (Prop)
+    0.313
+    
+    
+    
+    =
+    Beginpoint
+    Arrival
+    Time
+    0.313
+    
+    
+    
+    ------------------------------------------------------------------------------------
+    
+    
+    
+    Load
+    
+    
+    Slew
+    
+    
+    
+    Delay
+    
+    
+    Incr
+    
+    
+    Arc
+    
+    Fanout
+    Cell
+    
+    
+    
+    
+    Arc
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    User
+    
+    
+    
+    Arrival
+    Instance
+    
+    
+    
+    Delay
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Annotation
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Derate
+    
+    
+    Time
+    
+    
+    
+    ------------------------------------------------------------------------------------
+    
+    
+    
+    0.005
+    
+    0.055
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    WLM
+    
+    2
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    CK
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    0.313
+    
+    
+    ff1
+    
+    
+    
+    0.004
+    
+    0.042
+    
+    
+    0.123
+    
+    
+    0.000
+    
+    WLM
+    
+    1
+    
+    
+    
+    
+    
+    DFFHQX1
+    
+    
+    CK
+    ^
+    ->
+    Q
+    v
+    
+    1.000
+    
+    0.436
+    
+    
+    ff1
+    
+    
+    
+    0.004
+    
+    0.044
+    
+    
+    0.035
+    
+    
+    0.000
+    
+    WLM
+    
+    1
+    
+    
+    
+    
+    
+    INVX1
+    
+    
+    
+    
+    A
+    v
+    ->
+    Y
+    ^
+    
+    
+    1.000
+    
+    0.471
+    
+    
+    invd4
+    
+    
+    
+    0.004
+    
+    0.026
+    
+    
+    0.019
+    
+    
+    0.000
+    
+    WLM
+    
+    1
+    
+    
+    
+    
+    
+    INVX1
+    
+    
+    
+    
+    A
+    ^
+    ->
+    Y
+    v
+    
+    
+    1.000
+    
+    0.491
+    
+    
+    invd5
+    
+    
+    
+    0.010
+    
+    0.082
+    
+    
+    0.053
+    
+    
+    0.000
+    
+    WLM
+    
+    1
+    
+    
+    
+    
+    
+    INVX1
+    
+    
+    
+    
+    A
+    v
+    ->
+    Y
+    ^
+    
+    
+    1.000
+    
+    0.544
+    
+    
+    invd6
+    
+    
+    
+    0.010
+    
+    0.082
+    
+    
+    0.000
+    
+    
+    0.000
+    
+    WLM
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    TLATNRX4
+    D
+    ^
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    1.000
+    
+    0.544
+    
+    
+    latch2
+    
+    
+    
+    -------------------------------------------------------------------------------------
+    
+    Time
+    Borrow
+    Calculations
+    
+    
+    
+    --------------------------
+    
+    Latch
+    Early
+    Close
+    Edge
+    4.482
+    
+    
+    
+    -
+    Library
+    Setup
+    0.057
+    
+    
+    
+    -
+    Latch
+    Early
+    Open
+    Edge
+    2.558
+    
+    
+    
+    =
+    Max
+    Allowed
+    Borrow
+    Time
+    1.866
+    
+    
+    
+    -
+    Time
+    Borrowed
+    0.043
+    
+    
+    
+    =
+    Available
+    Time
+    Borrow
+    1.824
+    .RE
+    .P
+    Scenarios
+    for
+    Group
+    Path
+    Reporting
+    for
+    User-Defined
+    Groups
+    .RS
+    
+    "*"
+    2
+    .RS
+    
+    "*"
+    2
+    A
+    user-defined
+    group
+    is
+    created
+    with
+    the
+    same
+    name
+    as
+    any
+    of
+    the
+    defined
+    reference
+    clocks
+    and
+    with
+    the
+    same
+    constraint
+    as
+    for
+    the
+    "to"
+    clock.
+    For
+    example,
+    group_path
+    -name
+    CLK
+    -to
+    CLK.
+    
+    
+    In
+    this
+    case
+    only
+    one
+    group
+    named
+    CLK
+    will
+    be
+    displayed
+    in
+    the
+    timing
+    report.
+    This
+    will
+    be
+    the
+    same
+    default
+    group
+    with
+    reference
+    clock
+    CLK.
+    Note
+    that
+    default
+    groups
+    -
+    clock
+    gating
+    and
+    asynchronous
+    checks
+    -
+    will
+    not
+    be
+    honored
+    for
+    this
+    group.
+    
+    "*"
+    2
+    
+    A
+    user-defined
+    group
+    is
+    created
+    with
+    the
+    same
+    name
+    as
+    any
+    of
+    the
+    reference
+    clocks
+    but
+    with
+    different
+    constraint
+    as
+    specified
+    for
+    the
+    "to"
+    clock.
+    E.g.,
+    group_path
+    -name
+    CLK
+    -from
+    pin1
+    -to
+    CLK.
+    
+    In
+    this
+    case
+    the
+    two
+    groups
+    named
+    CLK
+    will
+    be
+    displayed
+    in
+    the
+    timing
+    report.
+    One
+    group
+    will
+    be
+    the
+    same
+    as
+    the
+    default
+    group
+    with
+    reference
+    clock
+    CLK
+    (which
+    will
+    not
+    honor
+    clock
+    gating
+    or
+    asynchronous
+    checks)
+    and
+    the
+    other
+    will
+    be
+    the
+    user-defined
+    path
+    group
+    with
+    name
+    CLK,
+    which
+    will
+    honor
+    all
+    the
+    checks.
+    .RE
+    
+    .RE
+    
+    .SH
+    Related
+    Information
+    .RS
+    
+    "*"
+    2
+    report_net
+    
+    "*"
+    2
+    report_ports
+    
+    "*"
+    2
+    set_table_style
+    
+    .RE
+    .P
+   
+
+<CMD> help *report_timing*
+Multiple matches found:
+      report_timing
+      report_timing_derate
+      report_timing_format
+      timing_report_timing_header_detail_info
+
+<CMD> help report_timing
+
+Usage: report_timing [-help] [-check_clocks]
+                     [-check_type {setup hold clock_gating_setup clock_gating_hold clock_gating_pulse_width data_setup data_hold recovery removal pulse_width clock_period clock_separation skew no_change_setup no_change_hold}]
+                     [-debug {unconstrained time_borrow cppr_point constraint_arc}] [-delay_limit <float>] [-derate_summary] [-format <column_list>] [-hpin]
+                     [-max_slack <float>] [-min_slack <float>] [-net] [-path_exceptions {applied ignored all}] [-path_group <groupname_list>]
+                     [-path_type {end summary full full_clock end_slack_only summary_slack_only}] [-retime {aocv path_slew_propagation aocv_path_slew_propagation}]
+                     [-retime_format {manual retime_compare retime_replace}] [-retime_mode {path exhaustive}] [-skip_io_paths] [-through <pin_list>] [-through_fall <pin_list>]
+                     [-through_rise <pin_list>] [-unique_pins] [-worst_rc_corner] [> <filename[.gz]>] [>> <filename[.gz]>] [-late | -early ] [-rise | -fall ] [-begin_end_pair | [[ -max_paths <integer>] [-nworst <integer>]]] [-unconstrained | -point_to_point ] [-collection | -machine_readable | -tcl_list ] [-not_through <object_list> | -not_rise_through <object_list> | -not_fall_through <object_list> ] [ [-from <pin_list> | -from_rise <pin_list> | -from_fall <pin_list> ] [-clock_from <clk_signame_list> [-edge_from {lead trail}]] [-to <pin_list> | -to_rise <pin_list> | -to_fall <pin_list> ] [-clock_to <clk_signame_list> [-edge_to {lead trail}]] ] [-view <viewName> ]
+
+-help                                    # Prints out the command usage
+-begin_end_pair                          # Reports all violating paths between unique source and target begin and end pins (bool, optional)
+-check_clocks                            # Generates reports based on timing paths on the clock network instead of the standard timing to data endpoints (bool, optional)
+-check_type {setup hold clock_gating_setup clock_gating_hold clock_gating_pulse_width data_setup data_hold recovery removal pulse_width clock_period clock_separation skew no_change_setup no_change_hold}
+                                         # Reports only the paths that end at the specified timing check (enum, optional)
+-clock_from <clk_signame_list>           # Reports the paths going through specified launching clocks (string, optional)
+-clock_to <clk_signame_list>             # Reports the paths going through specified capturing clocks (string, optional)
+-collection                              # Returns a collection of timing paths (bool, optional)
+-debug {unconstrained time_borrow cppr_point constraint_arc}
+                                         # Used for debugging various features of the path (enum, optional)
+-delay_limit <float>                     # path delay limit for unconstrained paths (float, optional)
+-derate_summary                          # Generates an LOCV derating summary table for the launch and capture paths, in addition to the timing report (bool, optional)
+-early                                   # Generates the timing report for early paths (bool, optional)
+-edge_from {lead trail}                  # Reports the paths going through specified edge of launching clocks (enum, optional)
+-edge_to {lead trail}                    # Reports the paths going through specified edge of capturing clocks (enum, optional)
+-fall                                    # Reports the path with the falling edge on the endpoint (bool, optional)
+-format <column_list>                    # Formats the report according to the column_list (string, optional)
+-from <pin_list>                         # Reports the paths going through specified from pins (string, optional)
+-from_fall <pin_list>                    # Reports the paths going through falling transition of specified from pins (string, optional)
+-from_rise <pin_list>                    # Reports the paths going through rising transition of specified from pins (string, optional)
+-hpin                                    # Prints all hierarchical crossings of an arc under hpin column in report_timing table (bool, optional)
+-late                                    # Generates the timing report for late paths (bool, optional)
+-machine_readable                        # Generates detailed timing report in machine-readable format (bool, optional)
+-max_paths <integer>                     # Reports the specified number of worst paths in the design, regardless of the endpoint (int, optional)
+-max_slack <float>                       # Reports only those paths with slack equal to or less than the value of float are reported (float, optional)
+-min_slack <float>                       # Reports only those paths whose slack is greater than the specified value (float, optional)
+-net                                     # Adds a row for the net arc (bool, optional)
+-not_fall_through <object_list>          # Reports paths that do not traverse through the falling transition of specified object list (string, optional)
+-not_rise_through <object_list>          # Reports paths that do not traverse through the rising transition of specified object list (string, optional)
+-not_through <object_list>               # Reports paths that do not traverse through the specified object list (string, optional)
+-nworst <integer>                        # Specifies the number of paths to be enumerated for each endpoint (int, optional)
+-path_exceptions {applied ignored all}   # Includes information of path exceptions applied and considered for the reported path (enum, optional)
+-path_group <groupname_list>             # Reports only paths contained in the groups specified in groupname_list (string, optional)
+-path_type {end summary full full_clock end_slack_only summary_slack_only}
+                                         # The path_type option lets you choose the format of the report by path type (enum, optional)
+-point_to_point                          # Traces the worst delay path between a pair of from-to pins (bool, optional)
+-retime {aocv path_slew_propagation aocv_path_slew_propagation}
+                                         # Reanalyzes the specified set of paths using the specified method
+                                         # (enum, optional)
+-retime_format {manual retime_compare retime_replace}
+                                         # The retime format option lets you set the format of the report for retime related fields (enum, optional)
+-retime_mode {path exhaustive}           # Reanalyzes the specified set of paths using the specified method (enum, optional)
+-rise                                    # Reports the path with the rising edge on the endpoint (bool, optional)
+-skip_io_paths                           # Specifies whether I/O paths are to be ignored (bool, optional)
+-tcl_list                                # Produces the report in Tcl list format instead of a tabular format (bool, optional)
+-through <pin_list>                      # Reports the paths going through specified pins (string, optional)
+-through_fall <pin_list>                 # Reports the paths going through falling transition of specified pins (string, optional)
+-through_rise <pin_list>                 # Reports the paths going through rising transition of specified pins (string, optional)
+-to <pin_list>                           # Reports the paths going through specified to pins (string, optional)
+-to_fall <pin_list>                      # Reports the paths going through falling transition of specified to pins (string, optional)
+-to_rise <pin_list>                      # Reports the paths going through rising transition of specified to pins (string, optional)
+-unconstrained                           # Reports only the unconstrained paths (bool, optional)
+-unique_pins                             # Reports paths through unique set of pins (bool, optional)
+-view <viewName>                         # Generates a timing report for the specified analysis view only. By default all active views are analyzed (string, optional)
+-worst_rc_corner                         # Identifies worst interconnect parameter combination that leads to minimum slack (desired) and generates a report for the corner
+                                         # (bool, optional)
+> <filename[.gz]>                        # Redirects output to specified file (redirect_operator, optional)
+>> <filename[.gz]>                       # Redirects output to specified file (redirect_operator, optional)
+
+
+<CMD> ecoPlace
+ECO placed 0 instances (0 connected + 0 unconnected).
+**Info: (IMPSP-307): Design contains fractional 3 cells.
+Estimated cell power/ground rail width = 0.160 um
+**Info: (IMPSP-307): Design contains fractional 3 cells.
+**Info: (IMPSP-307): Design contains fractional 3 cells.
+*** Starting refinePlace (0:04:38 mem=1505.0M) ***
+Total net bbox length = 8.923e+04 (4.233e+04 4.690e+04) (ext = 6.427e+02)
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um 
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1505.0MB
+Summary Report:
+Instances move: 0 (out of 7628 movable)
+Instances flipped: 0
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Total net bbox length = 8.923e+04 (4.233e+04 4.690e+04) (ext = 6.427e+02)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1505.0MB
+*** Finished refinePlace (0:04:38 mem=1505.0M) ***
+<CMD> zoomBox -3.96850 21.04000 478.88800 246.82850
+<CMD> zoomBox 1.58650 48.97600 412.01450 240.89600
+<CMD> pan -56.53700 33.63700
+<CMD> zoomBox -72.47800 15.80850 410.37850 241.59700
+<CMD> zoomBox -52.95500 34.09100 357.47300 226.01100
+<CMD> zoomBox -36.36050 49.63100 312.50300 212.76300
+<CMD> zoomBox -10.26600 74.06750 241.78800 191.93050
+<CMD> zoomBox -0.07500 83.61100 214.17100 183.79450
+<CMD> zoomBox -10.26600 74.06750 241.78800 191.93050
+<CMD> pan -23.08450 119.05450
+<CMD> zoomBox -10.01800 126.41600 172.09100 211.57200
+<CMD> zoomBox -0.90650 133.31100 153.88700 205.69400
+<CMD> pan -14.29200 147.93350
+<CMD> zoomBox -2.47900 166.69700 92.58400 211.14950
+<CMD> zoomBox 3.13750 175.39850 71.82200 207.51600
+<CMD> zoomBox 8.78150 184.14050 50.96250 203.86500
+<CMD> zoomBox 10.12800 186.22750 45.98250 202.99350
+<CMD> zoomBox 12.24650 189.50950 38.15150 201.62300
+<CMD> zoomBox 8.78000 184.14000 50.96250 203.86500
+<CMD> zoomBox 5.32900 178.79550 63.71400 206.09700
+<CMD> zoomBox 11.27150 188.00050 41.75000 202.25250
+<CMD> zoomBox 15.05700 192.49100 30.96750 199.93100
+<CMD> zoomBox 14.12650 191.66950 32.84500 200.42250
+<CMD> zoomBox 10.22950 188.22800 40.70900 202.48050
+<CMD> zoomBox 6.34950 184.80150 48.53750 204.52900
+<CMD> zoomBox 0.98050 180.05950 59.37200 207.36400
+<CMD> zoomBox -2.43400 177.04400 66.26200 209.16700
+<CMD> report_timing
+Path 1: VIOLATED Setup Check with Pin gen_pipe[5].Pipe_Zo_reg[5]/CK 
+Endpoint:   gen_pipe[5].Pipe_Zo_reg[5]/D (^) checked with  leading edge of 'clk'
+Beginpoint: ena                          (^) triggered by  leading edge of 
+'VCLK'
+Path Groups: {clk}
+Analysis View: BEST
+Other End Arrival Time          0.001
+- Setup                         0.138
++ Phase Shift                   1.000
+- Uncertainty                   0.100
+= Required Time                 0.763
+- Arrival Time                  3.033
+= Slack Time                   -2.270
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.600
+     = Beginpoint Arrival Time            0.600
+     +----------------------------------------------------------------------------------+ 
+     |          Instance          |     Arc     |   Cell   | Delay | Arrival | Required | 
+     |                            |             |          |       |  Time   |   Time   | 
+     |----------------------------+-------------+----------+-------+---------+----------| 
+     |                            | ena ^       |          |       |   0.600 |   -1.670 | 
+     | gen_pipe[5].Pipe_g7964     | B ^ -> Y v  | NAND2BX4 | 2.236 |   2.836 |    0.565 | 
+     | gen_pipe[5].Pipe_g7441     | A1 v -> Y ^ | OAI222X1 | 0.197 |   3.033 |    0.762 | 
+     | gen_pipe[5].Pipe_Zo_reg[5] | D ^         | DFFX4    | 0.000 |   3.033 |    0.763 | 
+     +----------------------------------------------------------------------------------+ 
+
+<CMD> zoomBox -7.94100 176.40300 72.87850 214.19500
+<CMD> pan 2.28700 172.97000
+<CMD> zoomBox -21.85700 155.27450 90.00450 207.58200
+<CMD> zoomBox -29.38250 151.98200 102.21900 213.52000
+<CMD> selectInst g99619
+<CMD> zoomBox -20.19600 155.86200 91.66550 208.16950
+<CMD> zoomBox -12.38750 159.16000 82.69500 203.62150
+<CMD> deselectAll
+<CMD> selectInst g95117__1881
+<CMD> zoomBox -3.25200 162.06750 65.44550 194.19100
+<CMD> zoomBox 0.31600 163.20300 58.70900 190.50800
+<CMD> zoomBox 4.29400 164.03750 53.92850 187.24700
+<CMD> zoomBox 7.67550 164.74700 49.86500 184.47500
+<CMD> deselectAll
+<CMD> selectInst g97847
+<CMD> deselectAll
+<CMD> selectWire 25.8600 169.9150 31.5400 169.9950 3 n_3911
+<CMD> deselectAll
+<CMD> selectWire 25.8600 169.9150 31.5400 169.9950 3 n_3911
+<CMD> zoomBox -4.08900 161.49000 64.60950 193.61400
+<CMD> zoomBox -9.46900 160.00050 71.35250 197.79350
+<CMD> zoomBox -4.08900 161.49000 64.60950 193.61400
+<CMD> zoomBox 0.48400 162.75600 58.87800 190.06150
+<CMD> zoomBox 4.37050 163.83200 54.00600 187.04200
+<CMD> zoomBox 10.48300 165.52400 46.34500 182.29350
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Fri Sep 15 17:29:13 2023
+  Total CPU time:     0:10:46
+  Total real time:    0:52:50
+  Peak memory (main): 1193.19MB
+
+
+*** Memory Usage v#1 (Current mem = 1575.391M, initial mem = 284.301M) ***
+*** Message Summary: 965 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:10:45, real=0:52:49, mem=1575.4M) ---
